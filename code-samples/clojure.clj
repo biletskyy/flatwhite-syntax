@@ -1,63 +1,51 @@
-(ns com.stuartsierra.component.platform
-  "Platform-specific implementation details for Component on
-  Clojure(JVM). This is not a public API.")
+; Conway's Game of Life, based on the work of:
+;; Laurent Petit https://gist.github.com/1200343
+;; Christophe Grand http://clj-me.cgrand.net/2011/08/19/conways-game-of-life
 
-(set! *warn-on-reflection* true)
+(ns ^{:doc "Conway's Game of Life."}
+ game-of-life)
 
-(defn argument-error [^String message]
-  (IllegalArgumentException. message))
+;; Core game of life's algorithm functions
 
-(defn type-name
-  "Returns a string name for the type/class of x."
-  [x]
-  (let [t (type x)]
-    (if (class? t)
-      (.getName ^Class t)
-      (str t))))
+(defn neighbours
+  "Given a cell's coordinates, returns the coordinates of its neighbours."
+  [[x y]]
+  (for [dx [-1 0 1] dy (if (zero? dx) [-1 1] [-1 0 1])]
+    [(+ dx x) (+ dy y)]))
 
-(defn alter-ex-data
-  "Returns a new ExceptionInfo with the same details as throwable and
-  ex-data as the result of (apply f (ex-data throwable) args)."
-  [^Throwable throwable f & args]
-  (let [^Throwable ex
-        (ex-info (.getMessage throwable)
-                 (apply f (ex-data throwable) args)
-                 (.getCause throwable))]
-    ;; .getStackTrace should never be null, but .setStackTrace
-    ;; doesn't allow null, so we'll be careful
-    (when-let [stacktrace (.getStackTrace throwable)]
-      (.setStackTrace ex stacktrace))
-    ex))
+(defn step
+  "Given a set of living cells, computes the new set of living cells."
+  [cells]
+  (set (for [[cell n] (frequencies (mapcat neighbours cells))
+             :when (or (= n 3) (and (= n 2) (cells cell)))]
+         cell)))
+
+;; Utility methods for displaying game on a text terminal
+
+(defn print-board
+  "Prints a board on *out*, representing a step in the game."
+  [board w h]
+  (doseq [x (range (inc w)) y (range (inc h))]
+    (if (= y 0) (print "\n"))
+    (print (if (board [x y]) "[X]" " . "))))
+
+(defn display-grids
+  "Prints a squence of boards on *out*, representing several steps."
+  [grids w h]
+  (doseq [board grids]
+    (print-board board w h)
+    (print "\n")))
+
+;; Launches an example board
+
+(def
+  ^{:doc "board represents the initial set of living cells"}
+   board #{[2 1] [2 2] [2 3]})
 
 
 (ns com.clojurebook.url-shortener
-  (:use [compojure.core :only (GET PUT POST defroutes)])
   (:require (compojure handler route)
             [ring.util.response :as response]))
-
-
-(def ^:private counter (atom 0))
-
-(def ^:private mappings (ref {}))
-
-(defn url-for
-  [id]
-  (@mappings id))
-
-(defn shorten!
- "Stores the given URL under a new unique identifier, or the given identifier
-  if provided.  Returns the identifier as a string.
-  Modifies the global mapping accordingly."
- ([url]
-  (let [id (swap! counter inc)
-        id (Long/toString id 36)]
-    (or (shorten! url id)
-        (recur url))))
- ([url id]
-  (dosync
-    (when-not (@mappings id)
-      (alter mappings assoc id url)
-      id))))
 
 (defn retain
   [& [url id :as args]]
