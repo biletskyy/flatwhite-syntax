@@ -1,0 +1,57 @@
+@import "colors";
+
+// Official Syntax Variables -----------------------------------
+
+// General colors
+@syntax-text-color:            @syntax-fg;
+@syntax-cursor-color:          @syntax-accent;
+@syntax-selection-color:       @syntax-selection;
+@syntax-selection-flash-color: @syntax-accent;
+@syntax-background-color:      @syntax-bg;
+
+// Guide colors
+@syntax-wrap-guide-color:          @syntax-guide;
+@syntax-indent-guide-color:        @syntax-guide;
+@syntax-invisible-character-color: @syntax-guide;
+
+// For find and replace markers
+@syntax-result-marker-color:          fade(@syntax-accent, 20%);
+@syntax-result-marker-color-selected: @syntax-accent;
+
+// Gutter colors -----------------------------------
+@syntax-gutter-text-color:                @syntax-comment;
+@syntax-gutter-text-color-selected:       @syntax-fg;
+@syntax-gutter-background-color:          @syntax-bg; // unused
+@syntax-gutter-background-color-selected: @syntax-selection-light;
+
+// Git colors - For git diff info. i.e. in the gutter
+@syntax-color-renamed:  hsl(208, 100%, 66%);
+@syntax-color-added:    hsl(132,  60%, 44%);
+@syntax-color-modified: hsl( 40,  90%, 50%);
+@syntax-color-removed:  hsl(  0, 100%, 54%);
+
+// For language entity colors
+@syntax-color-variable:   @syntax-fg;
+@syntax-color-constant:   @syntax-fg;
+@syntax-color-property:   @syntax-fg;
+@syntax-color-value:      @syntax-fg;
+@syntax-color-function:   @syntax-fg;
+@syntax-color-method:     @syntax-fg;
+@syntax-color-class:      @syntax-fg;
+@syntax-color-keyword:    @syntax-fg;
+@syntax-color-tag:        @syntax-fg;
+@syntax-color-attribute:  @syntax-fg;
+@syntax-color-import:     @syntax-fg;
+@syntax-color-snippet:    @syntax-fg;
+
+
+// Custom Syntax Variables -----------------------------------
+// Don't use in packages
+
+// @syntax-cursor-line: fade(@syntax-fg, 5%); // needs to be semi-transparent to show serach results
+@syntax-cursor-line: none; // needs to be semi-transparent to show serach results
+
+@syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-illegal-fg:    white;
+@syntax-illegal-bg:    @syntax-color-removed;

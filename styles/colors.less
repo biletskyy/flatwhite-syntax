@@ -1,0 +1,52 @@
+
+// Colors
+
+@bg-orange: hsla(35, 100%, 47%, 0.15); // Lum 89
+@bg-purple: hsla(272, 100%, 70%, 0.15); // Lum 89 #EDDCED
+@bg-green:  hsla(80, 100%, 37%, 0.15); // Lum 89
+@bg-blue:  hsla(203, 100%, 58%, 0.15); // Lum 89 #D7E7ED
+
+@text-purple: #6D556B; // Lum 38
+@text-green: #5D614C; // Lum 37
+@text-orange: #675E51; // Lum 37
+@text-blue: #536069; // Lum 37
+
+.hl {
+	// display: inline-block;
+}
+
+.hl-blue { // Contrast 5:1
+	.hl;
+	color: @text-blue;
+	background-color: @bg-blue;
+}
+
+.hl-green { // Contrast 5:1
+	.hl;
+	color: @text-green;
+	background-color: @bg-green;
+}
+
+
+.hl-purple { // Contrast 5:1
+	.hl;
+	color: @text-purple;
+	background-color: @bg-purple;
+}
+
+.hl-orange { // Contrast 5:1
+	.hl;
+	color: @text-orange;
+	background-color: @bg-orange;
+}
+
+// Base colors -----------------------------------
+@syntax-fg:     #6B665E; // Lum 40
+@syntax-fg-sec: #918C83; // Lum 55
+@syntax-bg:     #f6f1ea; // Lum 95
+@syntax-gutter: darken(@syntax-bg, 36%);
+@syntax-guide:  #D3CCC2; // Lum 80
+@syntax-accent: hsl(230, 100%, 66%);
+@syntax-selection: #DED8CF; // Lum 85
+@syntax-selection-light: #E9E4DC; // Lum 90
+@syntax-comment: #B8B1A8; // Lum 70

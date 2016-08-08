@@ -1,0 +1,17 @@
+{
+  "name": "flatwhite-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "Atom Flatwhite syntax theme",
+  "keywords": [
+    "syntax",
+    "soft",
+    "light",
+    "theme"
+  ],
+  "repository": "https://github.com/biletskyy/flatwhite-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

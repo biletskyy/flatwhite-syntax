@@ -1,0 +1,19 @@
+.source.json {
+  .meta.structure.dictionary.json {
+    .string.quoted {
+      .hl-blue;
+    }
+  }
+
+  .meta.structure.array.json {
+    .string.quoted {
+      .hl-green;
+    }
+  }
+
+  .meta.structure.dictionary.json, .meta.structure.array.json {
+    & > .value.json > .string.quoted.json {
+       .hl-green;
+    }
+  }
+}
