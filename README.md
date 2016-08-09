@@ -15,4 +15,4 @@ Easy on the eyes. Maintain 5:1 contrast between text and background colors.
 Font used in screenshots [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) 15px, line-height: 1.7
 
 ### Thanks
-Inspiration taken from [Alabaster](https://github.com/tonsky/alabaster-lighttable-skin) skin by [@tonsky](https://twitter.com/nikitonsky)!
+Inspiration taken from [Alabaster](https://github.com/tonsky/alabaster-lighttable-skin) skin by [https://github.com/tonsky](https://github.com/tonsky).
