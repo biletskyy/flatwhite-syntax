@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_filter :correct_user, :only => [:edit, :update]
-  before_filter :admin_user,   :only => :destroy
+  # before_filter :admin_user,   :only => :destroy
 
   def index
     @users = User.paginate(:page => params[:page])
@@ -15,6 +15,7 @@ class UsersController < ApplicationController
 
   def following
     @title = "Following"
+    @title = true
     @user = User.find(params[:id])
     @users = @user.following.paginate(:page => params[:page])
     render 'show_follow'

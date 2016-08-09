@@ -32,8 +32,8 @@
 (defn display-grids
   "Prints a squence of boards on *out*, representing several steps."
   [grids w h]
-  (doseq [board grids]
-    (print-board board w h)
+  (doseq [board grids])
+  (print-board board w h
     (print "\n")))
 
 ;; Launches an example board

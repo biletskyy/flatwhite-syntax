@@ -4,184 +4,32 @@
   color: @syntax-comment;
   font-style: italic;
 
-  .punctuation {
-    color: @syntax-comment;
-  }
-
-  .markup.link {
-
-  }
-}
-
-.entity {
-  color: @syntax-fg;
-
-  &.name.type {}
-
-  &.other.inherited-class {}
-}
-
-.keyword {
-  color: @syntax-fg;
-
-  &.control {
-    .hl-purple;
-  }
-
-  &.operator { }
-
-  &.other.special-method { }
-
-  &.other.unit { }
-}
-
-.storage {
-  color: @syntax-fg;
-
-  &.control {
-    .hl-purple;
-  }
-}
-
-.constant {
-  color: @syntax-fg;
-
-  &.variable { }
-
-  &.character.escape { }
-
-  &.numeric {
-    .hl-green;
-  }
-
-  &.boolean {
-    .hl-green;
-  }
-
-  &.other.color { }
-
-  &.other.symbol {
-    .hl-blue;
-  }
-}
-
-.variable {
-  color: @syntax-fg;
-
-  &.interpolation { }
-
-  &.parameter { }
+  .punctuation { color: inherit; }
 }
 
 .string {
-  color: @syntax-fg;
+  .hl-green;
 
-  &.quoted {
-    .hl-green;
-  }
-
-
-  &.regexp {
-    color: @syntax-fg;
-
-    .source.ruby.embedded { }
-  }
-
-  &.other.link { }
+  .string { background: none; }
 }
 
-.punctuation {
-  color: @syntax-fg;
-
-  &.definition {
-    &.comment { }
-
-    &.method-parameters,
-    &.function-parameters,
-    &.parameters,
-    &.separator,
-    &.seperator,
-    &.array {
-
-    }
-
-    &.heading,
-    &.identity { }
-
-    &.bold {
-      font-weight: bold;
-    }
-
-    &.italic {
-      font-style: italic;
-    }
-  }
-
-  &.section {
-    color: @syntax-fg;
-
-    &.embedded { }
-
-    &.method,
-    &.class,
-    &.inner-class { }
-  }
+.numeric,
+.boolean {
+  .hl-green;
 }
 
-.support {
-  color: @syntax-fg;
-
-  &.class { }
-
-  &.type { }
-
-  &.function  {
-
-    &.any-method { }
-  }
+.control {
+  .hl-purple;
 }
 
-.entity {
-  color: @syntax-fg;
-
-  &.name.function { }
-
-  &.name.class,
-  &.name.type.class { }
-
-  &.name.section { }
-
-  &.name.tag {
-    .hl-purple;
-  }
-
-  &.other.attribute-name {
-    &.id { }
-  }
-}
-
-.meta {
-  color: @syntax-fg;
-
-  &.class {
-    &.body { }
-  }
-
-  &.method-call,
-  &.method { }
-
-  &.definition {
-    &.variable { }
-  }
-
-  &.link { }
-
-  &.require { }
-
-  &.selector {
-    .hl-purple;
-  }
-}
+.entity,
+.keyword,
+.storage,
+.constant,
+.storage,
+.punctuation,
+.support,
+.meta { color: @syntax-fg; }
 
 .underline {
   text-decoration: underline;
@@ -196,42 +44,4 @@
     color: @syntax-illegal-fg !important;
     background-color: @syntax-illegal-bg !important;
   }
-}
-
-// Languages -------------------------------------------------
-
-
-.html {
-  &.tag.punctuation { .hl-purple; }
-
-  &.attribute-name { .hl-blue; }
-}
-
-
-.markup {
-  color: @syntax-fg;
-
-  &.bold {
-    font-weight: bold;
-  }
-
-
-  &.deleted { }
-
-  &.italic {
-    font-style: italic;
-  }
-
-  &.heading {
-
-    .punctuation.definition.heading { }
-  }
-
-  &.link { }
-
-  &.inserted { }
-
-  &.quote { }
-
-  &.raw { }
 }
