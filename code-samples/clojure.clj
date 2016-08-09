@@ -55,12 +55,6 @@
      :body (format "URL %s assigned the short identifier %s" url id)}
     {:status 409 :body (format "Short URL %s is already taken" id)}))
 
-(defn redirect
-  [id]
-  (if-let [url (url-for id)]
-    (response/redirect url)
-    {:status 404 :body (str "No such short URL: " id)}))
-
 (defroutes app*
   (GET "/" request "Welcome!")
   (PUT "/:id" [id url] (retain url id))
