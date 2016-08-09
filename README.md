@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/flatwhite-header.png" alt="Flatwhite syntax theme for Atom" width="314px" height="64px"></p>
 
-Minimal light syntax theme. 4 background colors used for code highlighting.
+Minimal light syntax theme. 4 colored backgrounds used for code highlighting.
 
 Easy on the eyes. Maintain 5:1 contrast between text and background colors.
 
