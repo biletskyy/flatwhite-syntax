@@ -2,11 +2,12 @@
   "name": "flatwhite-syntax",
   "theme": "syntax",
   "version": "0.1.0",
-  "description": "Atom Flatwhite syntax theme",
+  "description": "Colored backgrounds used for code highlighting.",
   "keywords": [
-    "syntax",
-    "soft",
     "light",
+    "soft",
+    "minimal",
+    "syntax",
     "theme"
   ],
   "repository": "https://github.com/biletskyy/flatwhite-syntax",
