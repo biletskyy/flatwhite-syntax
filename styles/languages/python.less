@@ -1,0 +1,30 @@
+.source.python {
+  .string {
+    > * { background: none; }
+  }
+  .storage {
+    &.class,
+    &.function {
+      .hl-purple;
+    }
+  }
+
+  .support {
+    &.function.builtin {
+      .hl-orange;
+    }
+  }
+
+  .variable.self {
+    .hl-orange;
+  }
+
+  .dictionary.key {
+    .numeric,
+    .string {
+      background: none;
+      .hl-blue;
+      > * { background: none; }
+    }
+  }
+}
