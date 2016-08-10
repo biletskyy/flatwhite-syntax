@@ -1,6 +1,7 @@
 .source.gfm {
   .markup {
     &.heading {
+      .hl-block;
       .hl-purple;
       > * { background: none !important; }
     }
@@ -11,20 +12,26 @@
 
     &.strike { text-decoration: line-through; }
 
-    &.raw { .hl-orange; }
+    &.raw {
+      .hl-block;
+      .hl-orange;
+    }
 
     &.code {
+      .hl-block;
       .hl-orange;
       * { background: none !important; }
     }
   }
 
   .link {
+    .hl-block;
     .hl-blue;
     > * { background: none !important; }
   }
 
   .comment {
+    .hl-block;
     .hl-green;
     > * { background: none !important; }
     color: @syntax-fg;
