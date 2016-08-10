@@ -4,6 +4,17 @@ Minimal light syntax theme. 4 colored backgrounds used for code highlighting.
 
 Easy on the eyes. Maintain 5:1 contrast between text and background colors.
 
+### Supported languages
+
+- Clojure
+- CSS
+- GitHub Markdown
+- HTML
+- JavaScript
+- Ruby
+
+More coming soon.
+
 ### Screenshots
 
 <p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-html2.png" alt="HTML screenshot" width="768px" height="755px"></p>
