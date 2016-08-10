@@ -1,0 +1,33 @@
+.source.gfm {
+  .markup {
+    &.heading {
+      .hl-purple;
+      > * { background: none !important; }
+    }
+
+    &.italic { font-style: italic; }
+
+    &.bold { font-weight: bold; }
+
+    &.strike { text-decoration: line-through; }
+
+    &.raw { .hl-orange; }
+
+    &.code {
+      .hl-orange;
+      * { background: none !important; }
+    }
+  }
+
+  .link {
+    .hl-blue;
+    > * { background: none !important; }
+  }
+
+  .comment {
+    .hl-green;
+    > * { background: none !important; }
+    color: @syntax-fg;
+    font-style: normal;
+  }
+}
