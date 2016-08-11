@@ -2,7 +2,7 @@
 
 Minimal light syntax theme. 4 colored backgrounds used for code highlighting.
 
-Easy on the eyes. Maintain 5:1 contrast between text and background colors.
+Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCAG 2.0 on contrast ratio](https://www.w3.org/TR/WCAG/#visual-audio-contrast)
 
 ### Supported languages
 

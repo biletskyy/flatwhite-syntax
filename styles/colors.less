@@ -1,48 +1,48 @@
 
 // Colors
 
-@bg-orange: hsla(35, 100%, 47%, 0.15); // Lum 89
-@bg-purple: hsla(272, 100%, 70%, 0.15); // Lum 89
-@bg-green:  hsla(80, 100%, 37%, 0.15); // Lum 89
-@bg-blue:  hsla(203, 100%, 58%, 0.15); // Lum 89
+@bg-orange: hsla(35, 100%, 47%, 0.15); // Lum 90 35° #F6E4CB
+@bg-purple: hsla(282, 100%, 68%, 0.15); // Lum 90 303° #F1DDF0
+@bg-green:  hsla(78, 100%, 37%, 0.19); // Lum 89 71° #E2E9C1
+@bg-blue:  hsla(209, 100%, 59%, 0.15); // Lum 90 207° #D9E6F1
 
-@text-purple: #6D556B; // Lum 38
-@text-green: #5D614C; // Lum 37
-@text-orange: #675E51; // Lum 37
-@text-blue: #536069; // Lum 37
+@text-orange: #5B5348; // Lum 33
+@text-purple: #614C60; // Lum 34
+@text-green: #535643; // Lum 33
+@text-blue: #49565D; // Lum 33
 
 .hl-block {
 	display: inline-block;
 }
 
-.hl-blue { // Contrast 5:1
-	color: @text-blue;
-	background-color: @bg-blue;
-}
-
-.hl-green { // Contrast 5:1
-	color: @text-green;
-	background-color: @bg-green;
-}
-
-
-.hl-purple { // Contrast 5:1
-	color: @text-purple;
-	background-color: @bg-purple;
-}
-
-.hl-orange { // Contrast 5:1
+.hl-orange { // Contrast 6:1
 	color: @text-orange;
 	background-color: @bg-orange;
 }
 
+.hl-purple { // Contrast 6:1
+	color: @text-purple;
+	background-color: @bg-purple;
+}
+
+.hl-green { // Contrast 6:1
+	color: @text-green;
+	background-color: @bg-green;
+}
+
+.hl-blue { // Contrast 6:1
+	color: @text-blue;
+	background-color: @bg-blue;
+}
+
+
 // Base colors -----------------------------------
-@syntax-fg:     #6B665E; // Lum 40
-@syntax-fg-sec: #918C83; // Lum 55
-@syntax-bg:     #f6f1ea; // Lum 95
-@syntax-gutter: darken(@syntax-bg, 36%);
-@syntax-guide:  #D3CCC2; // Lum 80
-@syntax-accent: hsl(230, 100%, 66%);
-@syntax-selection: #DED8CF; // Lum 85
-@syntax-selection-light: #E9E4DC; // Lum 90
-@syntax-comment: #B8B1A8; // Lum 70
+
+@syntax-fg:     #605B53; // Lum 36, Contrast 6:1
+@syntax-bg:     #F7F3EE; // Lum 95
+@syntax-gutter: @syntax-guide;
+@syntax-guide:  #DBD3C8; // Lum 83
+@syntax-accent: #3399FF;
+@syntax-selection: #E2DCD4; // Lum 87
+@syntax-selection-light: #F0EBE6; // Lum 92
+@syntax-comment: #AEA598; // Lum 65
