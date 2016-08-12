@@ -1,4 +1,3 @@
-
 # Random Article
 Far far away, behind the word mountains, far from the countries *Vokalia* and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the code of the *Semantics*, a large language ocean.
 And here is a [link](https://atom.io/themes/flatwhite-syntax)
