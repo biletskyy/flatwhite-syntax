@@ -7,3 +7,6 @@
 * CSS refactored
 * Python support added
 * RoR support added
+
+## 0.4.1
+* Adds Elixir Language support 
