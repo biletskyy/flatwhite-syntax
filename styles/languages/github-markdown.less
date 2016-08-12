@@ -1,9 +1,29 @@
 .source.gfm {
   .markup {
     &.heading {
-      .hl-block;
-      .hl-purple;
-      > * { background: none !important; }
+      display: inline-block;
+      color: @text-purple;
+    	background-color: @bg-purple;
+
+      > * { background-color: transparent; }
+    }
+
+    &.code,
+    &.raw {
+      display: inline-block;
+      color: @text-orange;
+    	background-color: @bg-orange;
+
+      .constant.numeric,
+      .constant.boolean,
+      .constant.nil,
+      .string.quoted,
+      .storage.control,
+      .keyword.control,
+      .constant.symbol {
+        color: inherit;
+      	background-color: transparent;
+      }
     }
 
     &.italic { font-style: italic; }
@@ -11,30 +31,28 @@
     &.bold { font-weight: bold; }
 
     &.strike { text-decoration: line-through; }
-
-    &.raw {
-      .hl-block;
-      .hl-orange;
-    }
-
-    &.code {
-      .hl-block;
-      .hl-orange;
-      * { background: none !important; }
-    }
   }
 
   .link {
-    .hl-block;
-    .hl-blue;
-    > * { background: none !important; }
+    display: inline-block;
+    color: @text-blue;
+    background-color: @bg-blue;
+
+    .link { background-color: transparent; }
   }
 
   .comment {
-    .hl-block;
-    .hl-green;
-    > * { background: none !important; }
+    display: inline-block;
+    color: @text-green;
+    background-color: @bg-green;
     color: @syntax-fg;
     font-style: normal;
+
+    .comment { background-color: transparent; }
+
+    .link {
+      color: inherit;
+      background-color: transparent;
+    }
   }
 }

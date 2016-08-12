@@ -2,35 +2,12 @@ class UsersController < ApplicationController
   before_filter :correct_user, :only => [:edit, :update]
   # before_filter :admin_user,   :only => :destroy
 
-  def index
-    @users = User.paginate(:page => params[:page])
-    @title = "All users"
-  end
-
-  def show
-    @user = User.find(params[:id])
-    @microposts = @user.microposts.paginate(:page => params[:page])
-    @title = @user.name
-  end
-
   def following
     @title = "Following"
     @title = true
     @user = User.find(params[:id])
     @users = @user.following.paginate(:page => params[:page])
     render 'show_follow'
-  end
-
-  def followers
-    @title = "Followers"
-    @user = User.find(params[:id])
-    @users = @user.followers.paginate(:page => params[:page])
-    render 'show_follow'
-  end
-
-  def new
-    @user  = User.new
-    @title = "Sign up"
   end
 
   def create
@@ -73,4 +50,49 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       redirect_to(root_path) if !current_user.admin? || current_user?(@user)
     end
+end
+
+# Ruby test
+
+require "gem"
+
+string = "base16"
+symbol = :base16
+fixnum = 0
+float  = 0.00
+array  = Array.new
+array  = ['chris', 85]
+hash   = {abc: "test"}
+regexp = /[abc]/
+
+# This is a comment
+class Person
+
+  attr_accessor :name
+
+  def initialize(attributes = {})
+    @name = attributes[:name]
+  end
+
+  def self.greet
+    "hello"
+
+    if true
+      false
+    end
+  end
+end
+
+person1 = Person.new(:name => nil)
+print Person::greet, " ", person1.name, "\n"
+puts "another #{Person::greet} #{person1.name}"
+
+catch do |obj_A|
+  catch do |obj_B|
+    throw(obj_B, 123)
+    puts "This puts is not reached"
+  end
+
+  puts "This puts is displayed"
+  456
 end

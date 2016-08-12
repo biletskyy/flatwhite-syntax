@@ -1,7 +1,14 @@
 .html {
-  &.entity.name.tag { .hl-purple; }
 
-  &.tag.punctuation { .hl-purple; }
+  .entity.name.tag,
+  .punctuation.definition.tag {
+    color: @text-purple;
+    background-color: @bg-purple;
+  }
 
-  &.attribute-name { .hl-blue; }
+  .entity.attribute-name {
+    color: @text-blue;
+    background-color: @bg-blue;
+  }
+
 }

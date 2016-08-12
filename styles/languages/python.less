@@ -1,30 +1,24 @@
 .source.python {
-  .string {
-    > * { background: none; }
-  }
-  .storage {
-    &.class,
-    &.function {
-      .hl-purple;
-    }
+
+  .storage.type.class,
+  .storage.type.function
+   {
+    color: @text-purple;
+    background-color: @bg-purple;
   }
 
-  .support {
-    &.function.builtin {
-      .hl-orange;
-    }
+
+  .support.function.builtin {
+    color: @text-orange;
+    background-color: @bg-orange;
   }
 
-  .variable.self {
-    .hl-orange;
-  }
-
-  .dictionary.key {
+  .meta.structure.dictionary.key {
     .numeric,
-    .string {
-      background: none;
-      .hl-blue;
-      > * { background: none; }
+    .string.quoted {
+      color: @text-blue;
+      background-color: @bg-blue;
     }
   }
+  
 }

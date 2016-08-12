@@ -1,19 +1,17 @@
 .source.json {
+
   .meta.structure.dictionary.json {
     .string.quoted {
-      .hl-blue;
-    }
-  }
-
-  .meta.structure.array.json {
-    .string.quoted {
-      .hl-green;
+      color: @text-blue;
+      background-color: @bg-blue;
     }
   }
 
   .meta.structure.dictionary.json, .meta.structure.array.json {
     & > .value.json > .string.quoted.json {
-       .hl-green;
+      color: @text-green;
+      background-color: @bg-green;
     }
   }
+
 }

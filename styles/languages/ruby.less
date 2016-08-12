@@ -1,24 +1,35 @@
 .source.ruby {
 
-  .symbol { .hl-blue; }
+  .string.regexp {
+    color: @text-green;
+    background-color: @bg-green;
 
-  .support.class { .hl-orange; }
-}
-
-
-.meta.embedded.erb {
-  .hl-orange;
-
-  .quoted,
-  .symbol,
-  .boolean,
-  .keyword,
-  .class {
-    background: none;
+    > .regexp { background-color: transparent; }
   }
-}
 
-.string {
-  .meta.embedded.erb { background: none !important; }
-  .support.class { background: none !important; }
+  .keyword.special-method,
+  .support.function.kernel {
+    color: @text-orange;
+  	background-color: @bg-orange;
+  }
+
+  &.embedded.html {
+    .embedded.punctuation {
+      color: @text-orange;
+    	background-color: @bg-orange;
+    }
+  }
+
+  &.rails {
+    .support.function {
+      &.actionpack,
+      &.viewhelpers,
+      &.activerecord,
+      &.activesupport {
+        color: @text-orange;
+        background-color: @bg-orange;
+      }
+    }
+  }
+
 }

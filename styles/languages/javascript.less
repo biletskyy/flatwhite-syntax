@@ -1,8 +1,21 @@
 .source.js {
-  .storage.type.function { .hl-purple; }
 
-  .storage.type.var { .hl-blue; }
+  .storage.type.function {
+    color: @text-purple;
+    background-color: @bg-purple;
+  }
 
-  .variable.language { .hl-orange; }
+
+  .storage.type.var {
+    color: @text-orange;
+    background-color: @bg-orange;
+  }
+
+  .meta.function.json {
+    .entity.name.function {
+      color: @text-blue;
+      background-color: @bg-blue;
+    }
+  }
 
 }

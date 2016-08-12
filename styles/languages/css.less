@@ -1,19 +1,19 @@
 .source.css {
-    .attribute-name {
-      .hl-purple;
-    }
 
-    .meta.selector {
-      .entity.name.tag { .hl-purple; }
-    }
+  .meta.selector > .tag,
+  .attribute-name {
+    color: @text-purple;
+    background-color: @bg-purple;
+  }
 
-  .property-name {
-    .hl-blue;
-
-    .property-name { background: none !important; }
+  .support.property-name {
+    color: @text-blue;
+  	background-color: @bg-blue;
   }
 
   .variable {
-    .hl-orange;
+    color: @text-orange;
+  	background-color: @bg-orange;
   }
+
 }

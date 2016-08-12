@@ -13,10 +13,10 @@ class SimpleTest(TestCase):
         Tests that 1 + 1 always equals 2.
         """
         self.assertEqual(1 + 1, 2)
-        
+
 # create a mapping of state to abbreviation
 states = {
-    'Oregon': 'OR',
+    1: 'OR',
     'Florida': 'FL',
     'California': 'CA',
     'New York': 'NY',
