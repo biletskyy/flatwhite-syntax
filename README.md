@@ -11,7 +11,7 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - Elixir (with [language-elixir package](https://atom.io/packages/language-elixir))
 - GitHub Markdown
 - HTML
-- JavaScript
+- JavaScript / CoffeeScript
 - Ruby / RoR / ERB / Slim (with [slim-language package](https://github.com/ianmitchell/slim-language))
 - Python
 

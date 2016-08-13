@@ -9,4 +9,8 @@
 * RoR support added
 
 ## 0.4.1
-* Adds Elixir Language support 
+* Adds Elixir Language support
+
+## 0.4.2
+* Adds CoffeeScript support
+* Adds Slim support
