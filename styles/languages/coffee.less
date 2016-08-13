@@ -1,0 +1,37 @@
+.source.coffee {
+
+  .string.regexp {
+    color: @text-green;
+    background-color: @bg-green;
+
+    > .regexp { background-color: transparent; }
+  }
+
+  .keyword.special-method,
+  .support.function.kernel {
+    color: @text-orange;
+  	background-color: @bg-orange;
+  }
+
+  .storage.type.function {
+    color: @text-purple;
+    background-color: @bg-purple;
+  }
+
+  .variable.instance {
+    color: @text-orange;
+    background-color: @bg-orange;
+  }
+
+  .leading-whitespace + .variable.assignment,
+  .meta.function .entity.name.function  {
+    color: @text-blue;
+  	background-color: @bg-blue;
+  }
+
+  .keyword.operator.new,
+  .storage.type.class {
+    color: @text-purple;
+  	background-color: @bg-purple;
+  }
+}
