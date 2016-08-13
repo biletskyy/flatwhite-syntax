@@ -12,7 +12,7 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - GitHub Markdown
 - HTML
 - JavaScript
-- Ruby / RoR / ERB
+- Ruby / RoR / ERB / Slim (with [slim-language package](https://github.com/ianmitchell/slim-language))
 - Python
 
 More coming soon. Write me if you need support for specific language.
