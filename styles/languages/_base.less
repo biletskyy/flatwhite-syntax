@@ -1,0 +1,70 @@
+.black {
+  color: @syntax-fg;
+	background-color: transparent;
+}
+
+.purple {
+  color: @text-purple;
+	background-color: @bg-purple;
+}
+
+.green {
+  color: @text-green;
+	background-color: @bg-green;
+}
+
+.blue {
+  color: @text-blue;
+	background-color: @bg-blue;
+}
+
+.orange {
+  color: @text-orange;
+	background-color: @bg-orange;
+}
+
+.reset {
+  color: inherit;
+  background-color: transparent;
+}
+
+.meta {
+  .black();
+}
+
+.keyword.control,
+.entity.tag, {
+  .purple();
+
+  .keyword.control,
+  .entity.tag { .reset(); }
+}
+
+.string.quoted {
+  .green();
+
+  .string.quoted { .reset(); }
+}
+
+.constant.keyword,
+.constant.symbol {
+  .blue();
+
+  .constant.symbol { .reset(); }
+}
+
+.string.regexp,
+.constant.numeric {
+  .orange();
+
+  .string.regexp,
+  .constant.numeric { .reset(); }
+}
+
+.comment {
+  color: @syntax-comment;
+  font-style: italic;
+}
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
