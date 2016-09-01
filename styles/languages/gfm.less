@@ -1,0 +1,124 @@
+// GF MarkDown
+
+// .source.gfm {
+//   .markup {
+//     &.heading {
+//       display: inline-block;
+//       color: @text-purple;
+//     	background-color: @bg-purple;
+//
+//       > * { background-color: transparent; }
+//     }
+//
+//     &.code,
+//     &.raw {
+//       display: inline-block;
+//       color: @text-orange;
+//     	background-color: @bg-orange;
+//
+//       .constant.numeric,
+//       .constant.boolean,
+//       .constant.nil,
+//       .string.quoted,
+//       .storage.control,
+//       .storage.var,
+//       .keyword.control,
+//       .constant.symbol {
+//         color: inherit;
+//       	background-color: transparent;
+//       }
+//     }
+//
+//     &.italic { font-style: italic; }
+//
+//     &.bold { font-weight: bold; }
+//
+//     &.strike { text-decoration: line-through; }
+//   }
+//
+//   .link {
+//     display: inline-block;
+//     color: @text-blue;
+//     background-color: @bg-blue;
+//
+//     .link { background-color: transparent; }
+//   }
+//
+//   .comment {
+//     display: inline-block;
+//     color: @text-green;
+//     background-color: @bg-green;
+//     color: @syntax-fg;
+//     font-style: normal;
+//
+//     .comment { background-color: transparent; }
+//
+//     .link {
+//       color: inherit;
+//       background-color: transparent;
+//     }
+//   }
+// }
+
+// .gfm {
+//   .uno-1();
+//   .punctuation-mixin();
+//
+//   .link {
+//     .uno-2();
+//   }
+//
+//   &.markup {
+//     .uno-2();
+//
+//     &.bold   { .bold(); }
+//     &.italic { .italic(); }
+//     &.strike {
+//       .uno-4();
+//       text-decoration: line-through;
+//     }
+//
+//     &.raw {
+//       .duo-1(); // Fenced code blocks
+//     }
+//
+//     &.raw .support,
+//     &.code .support {
+//       .uno-4(); // Fenced code blocks
+//     }
+//   }
+//
+//   &.comment  {
+//     .uno-4();
+//     &.quote {
+//       .uno-2();
+//     }
+//   }
+//
+//   &.table {
+//     .duo-1();
+//
+//     .border,
+//     .pipe {
+//       .uno-4();
+//     }
+//   }
+//
+//   &.variable,
+//   &.entity {
+//     .duo-1();
+//   }
+//   &.support  { .duo-2(); }
+//
+//   &.heading-1,
+//   &.heading-2,
+//   &.heading-3 {
+//     .duo-1();
+//   }
+//   &.heading-4,
+//   &.heading-5,
+//   &.heading-6 {
+//     .duo-2();
+//   }
+//
+// }
