@@ -17,5 +17,39 @@ a {
   outline: 0; }
 
 .my-class {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
 
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+body > p {
+   color: #000000;
+}
+
+input[type = "text"]{
+   color: #000000;
+}
+
+h1, h2, h3 {
+   color: #36C;
+   font-weight: normal;
+   letter-spacing: .4em;
+   margin-bottom: 1em;
+   text-transform: lowercase;
 }
