@@ -1,17 +1,25 @@
 .source.json {
 
-  .meta.structure.dictionary.json {
+  .meta.structure.dictionary {
     .string.quoted {
-      color: @text-blue;
-      background-color: @bg-blue;
+      .reset();
+    }
+
+    .array {
+      .string.quoted {
+        .green();
+      }
     }
   }
 
-  .meta.structure.dictionary.json, .meta.structure.array.json {
+  .meta.structure.dictionary, .meta.structure.array {
     & > .value.json > .string.quoted.json {
-      color: @text-green;
-      background-color: @bg-green;
+      .green();
     }
+  }
+
+  .constant.language {
+    .blue();
   }
 
 }
