@@ -42,12 +42,10 @@
   .black();
 }
 
-.keyword.control,
-.entity.tag, {
+.keyword.control {
   .purple();
 
-  .keyword.control,
-  .entity.tag { .reset(); }
+  .keyword.control { .reset(); }
 }
 
 .string.quoted {
@@ -64,6 +62,7 @@
 }
 
 .string.regexp,
+.constant.boolean,
 .constant.numeric {
   .orange();
 

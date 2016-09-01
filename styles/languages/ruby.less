@@ -1,34 +1,20 @@
 .source.ruby {
 
   .string.regexp {
-    color: @text-green;
-    background-color: @bg-green;
+    .green();
 
     > .regexp { background-color: transparent; }
   }
 
-  .keyword.special-method,
-  .support.function.kernel {
-    color: @text-orange;
-  	background-color: @bg-orange;
-  }
-
   &.embedded.html {
-    .embedded.punctuation {
-      color: @text-orange;
-    	background-color: @bg-orange;
-    }
-  }
+    .orange();
 
-  &.rails {
-    .support.function {
-      &.actionpack,
-      &.viewhelpers,
-      &.activerecord,
-      &.activesupport {
-        color: @text-orange;
-        background-color: @bg-orange;
-      }
+    .keyword.control,
+    .string.quoted,
+    .constant.keyword,
+    .constant.boolean,
+    .constant.symbol {
+      .reset();
     }
   }
 
@@ -36,9 +22,14 @@
 
 .erb.html {
   .meta.embedded {
-    .embedded.punctuation {
-      color: @text-orange;
-    	background-color: @bg-orange;
+    .orange();
+
+    .keyword.control,
+    .string.quoted,
+    .constant.keyword,
+    .constant.boolean,
+    .constant.symbol {
+      .reset();
     }
   }
 }
