@@ -14,7 +14,7 @@
   (GET "/" request "Welcome!")
   (PUT "/:id" [id url] (retain url id))
   (POST "/" [url] (if (empty? url)
-                    {:status 400 :body "No `url` parameter provided"}
+                    {:status 400 :body nil}
                     (retain url)))
   (GET "/:id" [id] (redirect id))
   (GET "/list/" [] (interpose "\n" (keys @mappings)))

@@ -58,15 +58,19 @@
 .constant.symbol {
   .blue();
 
+  .constant.keyword,
   .constant.symbol { .reset(); }
 }
 
 .string.regexp,
 .constant.boolean,
+.constant.nil,
 .constant.numeric {
   .orange();
 
   .string.regexp,
+  .constant.boolean,
+  .constant.nil,
   .constant.numeric { .reset(); }
 }
 
