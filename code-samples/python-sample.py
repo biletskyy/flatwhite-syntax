@@ -136,7 +136,7 @@ return_int: Return an integer rather than a string.'''
                     if return_int:
                         input('\nNOTICE: Currency will be represented as a string not an integer. *press enter*')
                         print()
-                    return_int = False
+                    return_int = True
                 break
             except KeyError:
                 ref = word
