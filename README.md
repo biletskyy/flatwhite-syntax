@@ -21,11 +21,11 @@ More coming soon. Write me if you need support for specific language.
 
 <p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-gfm4.png" alt="GitHub Markdown screenshot" width="768px" height="755px"></p>
 
-<p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-ror4.png" alt="Ruby On Rails screenshot" width="768px" height="755px"></p>
-
-<p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-html4.png" alt="HTML screenshot" width="768px" height="756px"></p>
-
 <p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-clojure4.png" alt="Clojure screenshot" width="768px" height="755px"></p>
+
+<p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-ror5.png" alt="Ruby On Rails screenshot" width="768px" height="755px"></p>
+
+<p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-html5.png" alt="HTML screenshot" width="768px" height="757px"></p>
 
 Font used in screenshots [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) 15px, line-height: 1.7
 

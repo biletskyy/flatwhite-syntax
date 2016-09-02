@@ -14,3 +14,8 @@
 ## 0.4.2
 * Adds CoffeeScript support
 * Adds Slim support
+
+## 0.5.0
+* Major refactor
+* Update HTML highlighting
+* Lots minor fixes and updates
