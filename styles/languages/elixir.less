@@ -1,29 +1,29 @@
 .source.elixir {
+
   .keyword.other.special-method {
-    color: @text-purple;
-    background-color: @bg-purple;
+    .orange();
   }
 
-  .variable.other.constant {
-    color: @text-orange;
-    background-color: @bg-orange;
+  .constant.language {
+    .teal();
   }
 
+  .string {
+    .embedded { .reset(); }
+  }
 
   &.embedded {
-    color: @text-orange;
-    background-color: @bg-orange;
+    .orange();
 
+    .keyword.other.special-method,
+    .constant.language,
     .constant.numeric,
     .constant.boolean,
     .constant.nil,
     .string.quoted,
-    .storage.control,
-    .storage.var,
     .keyword.control,
     .constant.symbol {
-      color: inherit;
-      background-color: transparent;
+      .reset();
     }
   }
 

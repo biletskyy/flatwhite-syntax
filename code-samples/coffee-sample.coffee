@@ -116,3 +116,73 @@ author = "Wittgenstein"
 quote  = "A picture is a fact. -- #{ author }"
 
 sentence = "#{ 22 /  } is a decent approximation of π"
+
+# Econ 101
+if this.studyingEconomics
+  buy()  while supply > demand
+  sell() until supply > demand
+
+# Nursery Rhyme
+num = 6
+lyrics = while num -= 1
+  "#{num} little monkeys, jumping on the bed.
+    One fell out and bumped his head."
+
+for filename in list
+  do (filename) ->
+    fs.readFile filename, (err, contents) ->
+      compile filename, contents.toString()
+
+launch() if ignition is on
+
+volume = 10 if band isnt SpinalTap
+
+letTheWildRumpusBegin() unless answer is no
+
+if car.speed < limit then accelerate()
+
+winner = yes if pick in [47, 92, 13]
+
+print inspect "My name is #{@name}"
+
+String::dasherize = ->
+  this.replace /_/g, "-"
+
+Account = (customer, cart) ->
+  @customer = customer
+  @cart = cart
+
+  $('.shopping_cart').on 'click', (event) =>
+    @customer.purchase @cart
+
+score = 76
+grade = switch
+  when score < 60 then 'F'
+  when score < 70 then 'D'
+  when score < 80 then 'C'
+  when score < 90 then 'B'
+  else 'A'
+# grade == 'C'
+
+
+module.exports =
+class Model
+  @resetNextInstanceId: -> nextInstanceId = 1
+
+  alive: true
+
+  constructor: (params) ->
+    @assignId(params?.id)
+
+  assignId: (id) ->
+    @id ?= id ? nextInstanceId++
+    nextInstanceId = id + 1 if id >= nextInstanceId
+
+  destroy: ->
+    return unless @isAlive()
+    @alive = false
+    @destroyed?()
+
+  isAlive: -> @alive
+
+  isDestroyed: -> not @isAlive()

@@ -1,9 +1,11 @@
 .source.ruby {
 
-  .string.regexp {
-    .green();
-
-    > .regexp { background-color: transparent; }
+  .support.function.actionpack,
+  .support.function.viewhelpers,
+  .support.function.activerecord,
+  .support.function.activesupport,
+  .keyword.special-method {
+    .orange();
   }
 
   &.embedded.html {
@@ -12,6 +14,7 @@
     .keyword.control,
     .string.quoted,
     .constant.keyword,
+    .constant.symbol,
     .constant.numeric,
     .constant.boolean,
     .constant.nil,
@@ -33,6 +36,7 @@
     .keyword.control,
     .string.quoted,
     .constant.keyword,
+    .constant.symbol,
     .constant.numeric,
     .constant.boolean,
     .constant.nil,

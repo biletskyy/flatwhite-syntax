@@ -125,3 +125,114 @@ enhance(bindingContext: Object = {}, applicationHost: string | Element = null): 
     resolve(this);
   });
 }
+
+var cubes, list, math, num, number, opposite, race, square,
+  slice = [].slice;
+
+number = 42;
+
+opposite = true;
+
+if (opposite) {
+  number = -42;
+}
+
+square = function(x) {
+  return x * x;
+};
+
+list = [1, 2, 3, 4, 5];
+
+math = {
+  root: Math.sqrt,
+  square: square,
+  cube: function(x) {
+    return x * square(x);
+  }
+};
+
+race = function() {
+  var runners, winner;
+  winner = arguments[0], runners = 2 <= arguments.length ? slice.call(arguments, 1) : [];
+  return print(winner, runners);
+};
+
+if (typeof elvis !== "undefined" && elvis !== null) {
+  alert("I knew it!");
+}
+
+cubes = (function() {
+  var i, len, results;
+  results = [];
+  for (i = 0, len = list.length; i < len; i++) {
+    num = list[i];
+    results.push(math.cube(num));
+  }
+  return results;
+})();
+
+var fill;
+
+fill = function(container, liquid) {
+  if (liquid == null) {
+    liquid = "coffee";
+  }
+  return "Filling the " + container + " with " + liquid + "...";
+};
+
+export default React.createClass({
+  getInitialState() {
+    return { num: this.getRandomNumber() };
+  },
+
+  getRandomNumber(): number {
+    return Math.ceil(Math.random() * 6);
+  },
+
+  render(): any {
+    return <div>
+      Your dice roll:
+      {this.state.num}
+    </div>;
+  }
+});
+
+let fibonacci = {
+  [Symbol.iterator]() {
+    let pre = 0, cur = 1;
+    return {
+      next() {
+        [pre, cur] = [cur, pre + cur];
+        return { done: false, value: cur }
+      }
+    }
+  }
+}
+
+for (var n of fibonacci) {
+  // truncate the sequence at 1000
+  if (n > 1000)
+    break;
+  console.log(n);
+}
+
+// lib/mathplusplus.js
+export * from "lib/math";
+export var e = 2.71828182846;
+export default function(x) {
+    return Math.exp(x);
+}
+
+function timeout(duration = 0) {
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, duration);
+    })
+}
+
+var p = timeout(1000).then(() => {
+    return timeout(2000);
+}).then(() => {
+    throw new Error("hmm");
+}).catch(err => {
+    return Promise.all([timeout(100), timeout(200)]);
+})

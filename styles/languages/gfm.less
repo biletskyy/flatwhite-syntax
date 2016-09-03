@@ -2,28 +2,33 @@
   .markup {
     &.heading {
       display: inline-block;
-      color: @text-purple;
-    	background-color: @bg-purple;
+      .purple();
 
-      > * { background-color: transparent; }
+      .heading { .reset(); }
     }
 
     &.code,
     &.raw {
       display: inline-block;
-      color: @text-orange;
-    	background-color: @bg-orange;
+      .orange();
 
+      .support.function.actionpack,
+      .support.function.viewhelpers,
+      .support.function.activerecord,
+      .support.function.activesupport,
+      .keyword.special-method,
+      .variable.this,
+      .keyword.new,
       .constant.numeric,
       .constant.boolean,
       .constant.nil,
+      .constant.keyword,
       .string.quoted,
       .storage.control,
       .storage.var,
       .keyword.control,
       .constant.symbol {
-        color: inherit;
-      	background-color: transparent;
+        .reset();
       }
     }
 
@@ -36,24 +41,18 @@
 
   .link {
     display: inline-block;
-    color: @text-blue;
-    background-color: @bg-blue;
+    .blue();
 
-    .link { background-color: transparent; }
+    .link { .reset(); }
   }
 
   .comment {
     display: inline-block;
-    color: @text-green;
-    background-color: @bg-green;
-    color: @syntax-fg;
     font-style: normal;
+    .green();
 
-    .comment { background-color: transparent; }
 
-    .link {
-      color: inherit;
-      background-color: transparent;
-    }
+    .link,
+    .comment { .reset(); }
   }
 }

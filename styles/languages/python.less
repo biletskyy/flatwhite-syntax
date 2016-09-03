@@ -1,21 +1,22 @@
 .source.python {
 
   .storage.type.class,
-  .storage.type.function
-   {
-    color: @text-purple;
-    background-color: @bg-purple;
+  .storage.type.function {
+    .purple();
   }
 
   .meta.structure.dictionary.key {
     .numeric,
     .string.quoted {
-      color: @text-blue;
-      background-color: @bg-blue;
+      .blue();
     }
   }
 
   .constant.language {
+    .teal();
+  }
+
+  .variable.self {
     .orange();
   }
 

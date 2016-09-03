@@ -1,18 +1,25 @@
 .source.js {
 
   .storage.type.function {
-    .purple();
+    .blue();
+
+    .function { .reset(); }
   }
 
-
+  .keyword.operator.delete,
+  .keyword.operator.in,
+  .keyword.operator.of,
+  .keyword.operator.instanceof,
+  .keyword.operator.new,
+  .keyword.operator.typeof,
+  .keyword.operator.void,
+  .storage.modifier,
+  .variable.default,
   .storage.type.var {
-
+    .orange();
   }
 
-  .meta.function.json {
-    .entity.name.function {
-      .blue();
-    }
+  .comment {
+    .storage.type.class { .reset(); }
   }
-
 }

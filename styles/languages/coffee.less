@@ -1,26 +1,24 @@
 .source.coffee {
 
-  .string.regexp {
-    .green();
-
-    > .regexp { background-color: transparent; }
-  }
-
-
-
-  .storage.type.function {
-    .purple();
-  }
-
-
-  .leading-whitespace + .variable.assignment,
-  .meta.function .entity.name.function  {
+  .storage.type.function,
+  .meta.inline.function {
     .blue();
+
+    .function { .reset(); }
+  }
+
+  .variable.this,
+  .keyword.new {
+    .orange();
   }
 
 
   .storage.type.class {
     .purple();
+  }
+
+  .constant.null {
+    .teal();
   }
 
   .embedded {
@@ -32,5 +30,9 @@
     .constant.symbol {
       .reset();
     }
+  }
+
+  .comment {
+    .storage.type.class { .reset(); }
   }
 }

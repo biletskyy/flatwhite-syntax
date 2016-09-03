@@ -1,7 +1,12 @@
+## 0.6.0
+* Adds 5th color - Teal
+* Updates Blue
+* Updates all languages with new color
+* Small fixes and improvements
 
 ## 0.5.0
 * Major refactor
-* Update HTML highlighting
+* Updates HTML highlighting
 * Lots minor fixes and updates
 
 ## 0.4.2

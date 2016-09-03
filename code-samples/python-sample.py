@@ -314,3 +314,34 @@ def int_to_str(number):
         output.append('dollars')
 
     return ' '.join(output)
+
+
+class Feed(models.Model):
+    title = models.CharField(max_length=500)
+    feed_url = models.URLField(unique=True, max_length=500)
+    public_url = models.URLField(max_length=500)
+    approval_status = models.CharField(max_length=1, choices=STATUS_CHOICES, default=PENDING_FEED)
+    feed_type = models.ForeignKey(FeedType, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, blank=True, null=True, related_name='owned_feeds', on_delete=models.SET_NULL)
+
+    def __str__(self):
+        return self.title
+
+    def save(self, **kwargs):
+        super(Feed, self).save(**kwargs)
+        if settings.SUPERFEEDR_CREDS is not None:
+            if self.approval_status == APPROVED_FEED:
+                Subscription.objects.subscribe(self.feed_url, settings.PUSH_HUB)
+            elif self.approval_status == DENIED_FEED:
+                self.unsubscribe()
+
+    def delete(self, **kwargs):
+        super(Feed, self).delete(**kwargs)
+        if settings.SUPERFEEDR_CREDS is not None:
+            self.unsubscribe()
+
+    def unsubscribe(self):
+        try:
+            Subscription.objects.get(topic=self.feed_url).unsubscribe()
+        except Subscription.DoesNotExist:
+            pass

@@ -1,7 +1,3 @@
-.black {
-  color: @syntax-fg;
-	background-color: transparent;
-}
 
 .purple {
   color: @text-purple;
@@ -28,6 +24,11 @@
 	background-color: @bg-orange;
 }
 
+.teal {
+  color: @text-teal;
+	background-color: @bg-teal;
+}
+
 .reset {
   color: inherit;
   background-color: transparent;
@@ -38,8 +39,11 @@
   background-color: transparent;
 }
 
+// global language highlights
+
 .meta {
-  .black();
+  color: @syntax-fg;
+	background-color: transparent;
 }
 
 .keyword.control {
@@ -48,10 +52,19 @@
   .keyword.control { .reset(); }
 }
 
-.string.quoted {
+.string.quoted,
+.string.regexp {
   .green();
 
-  .string.quoted { .reset(); }
+  .constant.boolean,
+  .constant.nil,
+  .constant.numeric,
+  .constant.keyword,
+  .constant.symbol,
+  .string.quoted,
+  .string.regexp {
+    .reset();
+  }
 }
 
 .constant.keyword,
@@ -62,13 +75,12 @@
   .constant.symbol { .reset(); }
 }
 
-.string.regexp,
+
 .constant.boolean,
 .constant.nil,
 .constant.numeric {
-  .orange();
+  .teal();
 
-  .string.regexp,
   .constant.boolean,
   .constant.nil,
   .constant.numeric { .reset(); }
@@ -80,6 +92,7 @@
 }
 
 .bold { font-weight: bold; }
+
 .italic { font-style: italic; }
 
 .invalid {
