@@ -1,0 +1,26 @@
+.source.go {
+
+  .keyword {
+    &.function,
+    &.package,
+    &.import {
+      .purple();
+    }
+
+    &.type {
+      .orange();
+    }
+
+  }
+
+  .constant.language {
+    .teal();
+  }
+
+}
+
+.gohtml {
+  .punctuation.embedded {
+    color: @syntax-fg-sec;
+  }
+}

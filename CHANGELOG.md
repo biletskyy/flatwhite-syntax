@@ -2,6 +2,7 @@
 * Refactors embedded and resets
 * Updates HTML highlighting
 * Adds Jade support
+* Adds Golang support
 
 ## 0.6.0
 * Adds 5th color - Teal

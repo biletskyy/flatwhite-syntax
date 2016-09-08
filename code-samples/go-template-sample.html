@@ -1,0 +1,25 @@
+//header.tmpl
+{{define "header"}}
+<html>
+<head>
+    <title>Something here</title>
+</head>
+<body>
+  {{end}}
+
+//content.tmpl
+{{define "content"}}
+{{template "header"}}
+<h1>Nested here</h1>
+<ul>
+    <li>Nested usag</li>
+    <li>Call template</li>
+</ul>
+{{template "footer"}}
+{{end}}
+
+//footer.tmpl
+{{define "footer"}}
+</body>
+</html>
+{{end}}
