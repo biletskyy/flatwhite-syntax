@@ -1,4 +1,4 @@
-.source.ruby {
+.ruby {
 
   .support.function.actionpack,
   .support.function.viewhelpers,
@@ -8,44 +8,22 @@
     .orange();
   }
 
-  &.embedded.html {
+  .meta.embedded,
+  .source.embedded {
     .orange();
-
-    .keyword.control,
-    .string.quoted,
-    .constant.keyword,
-    .constant.symbol,
-    .constant.numeric,
-    .constant.boolean,
-    .constant.nil,
-    .constant.symbol {
-      .reset();
-    }
-
-    .punctuation {
-      color: @syntax-secondary;
-    }
-  }
-
-}
-
-.erb.html {
-  .meta.embedded {
-    .orange();
-
-    .keyword.control,
-    .string.quoted,
-    .constant.keyword,
-    .constant.symbol,
-    .constant.numeric,
-    .constant.boolean,
-    .constant.nil,
-    .constant.symbol {
-      .reset();
-    }
+    .reset_all();
 
     .punctuation.embedded {
-      color: @syntax-secondary;
+      color: @text-orange-sec;
+    }
+
+    .support.function.actionpack,
+    .support.function.viewhelpers,
+    .support.function.activerecord,
+    .support.function.activesupport,
+    .keyword.special-method {
+      .reset();
     }
   }
+
 }

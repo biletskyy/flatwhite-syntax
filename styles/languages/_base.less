@@ -29,61 +29,66 @@
 	background-color: @bg-teal;
 }
 
-.reset {
-  color: inherit;
-  background-color: transparent;
-}
-
 .secondary {
   color: #897D6C;
   background-color: transparent;
 }
 
-// global language highlights
-
-.meta {
-  color: @syntax-fg;
-	background-color: transparent;
+.reset {
+  color: inherit;
+  background-color: transparent;
 }
+
+.reset_all {
+  .keyword.control,
+  .string.quoted,
+  .string.regexp,
+  .constant.numeric,
+  .constant.boolean,
+  .constant.nil,
+  .constant.null,
+  .constant.keyword,
+  .constant.symbol,
+  .meta.embedded {
+    .reset();
+  }
+
+  .meta.embedded {
+    .punctuation.embedded { .reset(); }
+  }
+}
+
+// Global Highlighting
 
 .keyword.control {
   .purple();
-
-  .keyword.control { .reset(); }
-}
-
-.string.quoted,
-.string.regexp {
-  .green();
-
-  .constant.boolean,
-  .constant.nil,
-  .constant.numeric,
-  .constant.keyword,
-  .constant.symbol,
-  .string.quoted,
-  .string.regexp {
-    .reset();
-  }
 }
 
 .constant.keyword,
 .constant.symbol {
   .blue();
-
-  .constant.keyword,
-  .constant.symbol { .reset(); }
 }
 
-
+.constant.numeric,
 .constant.boolean,
 .constant.nil,
-.constant.numeric {
+.constant.null {
   .teal();
+}
 
-  .constant.boolean,
-  .constant.nil,
-  .constant.numeric { .reset(); }
+.string.quoted,
+.string.regexp {
+  .green();
+  .reset_all();
+}
+
+.meta.embedded {
+  .orange();
+  .reset_all();
+
+  .punctuation.embedded {
+    color: @text-orange-sec;
+  }
 }
 
 .comment {
