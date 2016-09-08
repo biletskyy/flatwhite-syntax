@@ -1,8 +1,9 @@
-## Unreleased
+## 0.6.1
 * Refactors embedded and resets
 * Updates HTML highlighting
 * Adds Jade support
 * Adds Golang support
+* Small fixes and improvements
 
 ## 0.6.0
 * Adds 5th color - Teal

@@ -9,10 +9,12 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 ### Supported languages
 
 - Clojure
-- CSS / Less
+- CSS / Less / SASS / SCSS
 - Elixir (with [language-elixir package](https://atom.io/packages/language-elixir))
 - GitHub Markdown
+- Go
 - HTML
+- Jade
 - JavaScript / CoffeeScript
 - Ruby / RoR / ERB / Slim (with [slim-language package](https://github.com/ianmitchell/slim-language))
 - Python
@@ -27,7 +29,7 @@ Write me if you need support for specific language.
 
 <p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-ror6.png" alt="Ruby On Rails screenshot" width="778px" height="752px"></p>
 
-<p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-html6.png" alt="HTML screenshot" width="778px" height="753px"></p>
+<p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-html61.png" alt="HTML screenshot" width="792px" height="755px"></p>
 
 Font used in screenshots [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) 15px, line-height: 1.7
 
