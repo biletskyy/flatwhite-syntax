@@ -1,5 +1,6 @@
 ## 0.6.2
 * Creates Settings: embedded variant
+* Adds PHP support
 
 ## 0.6.1
 * Refactors embedded and resets
