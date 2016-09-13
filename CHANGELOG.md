@@ -1,3 +1,6 @@
+## 0.6.2
+* Creates Settings: embedded variant
+
 ## 0.6.1
 * Refactors embedded and resets
 * Updates HTML highlighting
