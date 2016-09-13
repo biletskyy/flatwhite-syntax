@@ -17,9 +17,17 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - Jade
 - JavaScript / CoffeeScript
 - Ruby / RoR / ERB / Slim (with [slim-language package](https://github.com/ianmitchell/slim-language))
+- PHP
 - Python
 
 Write me if you need support for specific language.
+
+### Settings
+
+You can choose between 2 embedded highlighting variants: simple (default) and full.
+
+<p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/embedded-variants.gif" width="457px" height="221px"></p>
+
 
 ### Screenshots
 
