@@ -7,7 +7,7 @@
   }
 
   .storage.type {
-    .orange();
+    // .orange();
   }
 
   .constant.language {
@@ -20,5 +20,18 @@
 
   .comment {
     .storage.type.class { .reset(); }
+  }
+
+  .meta.tag.jsx {
+    color: @syntax-fg-sec;
+
+    .entity.other.attribute-name.jsx {
+      font-style: normal !important;
+    }
+
+
+    .entity.tag {
+      .purple();
+    }
   }
 }

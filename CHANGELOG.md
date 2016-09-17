@@ -1,3 +1,9 @@
+## Unreleased
+* Updates Javascript with Babel javascript package
+* Adds React JSX support with Babel javascript package
+* Update CoffeeScript
+
+
 ## 0.6.2
 * Creates Settings: embedded variant
 * Adds PHP support
