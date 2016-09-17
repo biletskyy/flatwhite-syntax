@@ -1,7 +1,8 @@
-## Unreleased
+## 0.6.3
 * Updates Javascript with Babel javascript package
 * Adds React JSX support with Babel javascript package
 * Update CoffeeScript
+* Fix Less variable other interpolation
 
 
 ## 0.6.2

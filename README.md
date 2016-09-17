@@ -15,7 +15,8 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - Go
 - HTML
 - Jade
-- JavaScript / CoffeeScript
+- JavaScript (better with [language-babel](https://atom.io/packages/language-babel)) / CoffeeScript
+- React JSX (with [language-babel](https://atom.io/packages/language-babel))
 - Ruby / RoR / ERB / Slim (with [slim-language package](https://github.com/ianmitchell/slim-language))
 - PHP
 - Python
