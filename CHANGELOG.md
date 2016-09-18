@@ -1,5 +1,6 @@
-## Unreleased
+## 0.6.4
 * Adds Haskell support
+* Adds Liquid (simple)
 
 ## 0.6.3
 * Updates Javascript with Babel javascript package
