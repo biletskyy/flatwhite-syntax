@@ -13,6 +13,7 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - Elixir (with [language-elixir package](https://atom.io/packages/language-elixir))
 - GitHub Markdown
 - Go
+- Haskell (with [language-haskell](https://atom.io/packages/language-haskell))
 - HTML
 - Jade
 - JavaScript (better with [language-babel](https://atom.io/packages/language-babel)) / CoffeeScript

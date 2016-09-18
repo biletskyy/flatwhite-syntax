@@ -1,6 +1,16 @@
-// .haskell {
-//   &.source {
-//     .uno-2();
-//     .punctuation-mixin();
-//   }
-// }
+.source.haskell {
+
+  .keyword.other:not(.arrow):not(.double-colon) {
+    .purple();
+  }
+
+  .entity.name.type {
+    .orange();
+  }
+
+  .support.tag.prelude {
+    .teal();
+  }
+
+
+}

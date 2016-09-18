@@ -1,3 +1,6 @@
+## Unreleased
+* Adds Haskell support
+
 ## 0.6.3
 * Updates Javascript with Babel javascript package
 * Adds React JSX support with Babel javascript package
