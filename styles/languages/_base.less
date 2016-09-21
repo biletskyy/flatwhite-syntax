@@ -60,11 +60,6 @@
   }
 }
 
-.attribute-mix {
-  color: @syntax-fg2;
-  font-style: italic;
-}
-
 // Global Highlighting
 
 .keyword.control {
@@ -95,7 +90,7 @@
 }
 
 .meta.embedded:not(.php) {
-  .embedded-mix();
+  .settings-embedded-mix();
 }
 
 .bold { font-weight: bold; }
@@ -110,5 +105,27 @@
   &.illegal {
     color: @syntax-illegal-fg !important;
     background-color: @syntax-illegal-bg !important;
+  }
+}
+
+// Mixins
+
+.attribute-mix {
+  color: @syntax-fg2;
+  font-style: italic;
+}
+
+.embedded-simple-mix {
+  .orange();
+  .reset_all();
+
+  .punctuation.embedded {
+    color: @text-orange-sec;
+  }
+}
+
+.embedded-full-mix {
+  .punctuation.embedded {
+    .orange();
   }
 }
