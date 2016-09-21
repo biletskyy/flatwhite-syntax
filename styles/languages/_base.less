@@ -50,6 +50,7 @@
   .constant.keyword,
   .constant.symbol,
   .constant.language,
+  .entity.name.tag,
   .meta.embedded {
     .reset();
   }
@@ -91,6 +92,10 @@
 .comment {
   color: @syntax-comment;
   font-style: italic;
+}
+
+.meta.embedded:not(.php) {
+  .embedded-mix();
 }
 
 .bold { font-weight: bold; }
