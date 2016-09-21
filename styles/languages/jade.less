@@ -6,7 +6,11 @@
   }
 
   .complete_tag {
-    color: @syntax-fg-sec;
+    color: @syntax-fg3;
+
+    .entity.attribute-name.tag {
+      .attribute-mix();
+    }
 
     .text {
       color: @syntax-fg;

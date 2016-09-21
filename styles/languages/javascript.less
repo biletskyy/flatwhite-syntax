@@ -23,15 +23,19 @@
   }
 
   .meta.tag.jsx {
-    color: @syntax-fg-sec;
-
-    .entity.other.attribute-name.jsx {
-      font-style: normal !important;
-    }
-
 
     .entity.tag {
       .purple();
     }
+
+    .entity.other.attribute-name.jsx {
+      color: @syntax-fg2;
+    }
+
+    .punctuation.definition.tag,
+    .keyword.operator.assignment {
+      color: @syntax-fg3;
+    }
+
   }
 }

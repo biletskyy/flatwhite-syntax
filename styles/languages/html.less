@@ -1,10 +1,17 @@
 .html {
 
   .meta.tag {
-    color: @syntax-fg-sec;
+    color: @syntax-fg3;
+
+    .punctuation.definition.tag {
+      color: @syntax-fg3;
+    }
+
+    .entity.attribute-name {
+      .attribute-mix();
+    }
 
     .entity.tag {
-      // color: @syntax-fg;
       .purple();
     }
 
