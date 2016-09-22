@@ -1,3 +1,9 @@
+## 0.7.0
+* Adds third fg color
+* Changes attributes to italic with fg2 color
+* Adds Rust support
+* Refactors embedded mixins
+
 ## 0.6.4
 * Adds Haskell support
 * Adds Liquid (simple)

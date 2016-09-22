@@ -19,10 +19,11 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - JavaScript (better with [language-babel](https://atom.io/packages/language-babel)) / CoffeeScript
 - React JSX (with [language-babel](https://atom.io/packages/language-babel))
 - Ruby / RoR / ERB / Slim (with [slim-language package](https://github.com/ianmitchell/slim-language))
+- Rust (with [language-rust](https://atom.io/packages/language-rust))
 - PHP
 - Python
 
-Write me if you need support for specific language.
+If you need support for specific language, please, open an [issue](https://github.com/biletskyy/flatwhite-syntax/issues).
 
 ### Settings
 
@@ -39,7 +40,7 @@ You can choose between 2 embedded highlighting variants: simple (default) and fu
 
 <p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-ror6.png" alt="Ruby On Rails screenshot" width="778px" height="752px"></p>
 
-<p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-html61.png" alt="HTML screenshot" width="792px" height="755px"></p>
+<p><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/screenshot-light-html7.png" alt="HTML screenshot" width="792px" height="755px"></p>
 
 Font used in screenshots [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) 15px, line-height: 1.7
 
