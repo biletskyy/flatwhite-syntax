@@ -22,6 +22,7 @@ class Flatwhite
   enableTheme: (ebmedded) ->
     embedded_path = "#{__dirname}/../styles/settings.less"
     fs.writeFileSync embedded_path, "@import 'languages/embedded-#{@getNormalizedName(ebmedded)}';"
+    atom.packages.getLoadedPackage("#{@packageName}").reloadStylesheets()
 
   getNormalizedName: (name) ->
     "#{name}"
