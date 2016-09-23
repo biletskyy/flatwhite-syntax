@@ -8,6 +8,7 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 
 ### Supported languages
 
+- C
 - Clojure
 - CSS / Less / SASS / SCSS
 - Elixir (with [language-elixir package](https://atom.io/packages/language-elixir))

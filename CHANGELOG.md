@@ -1,3 +1,7 @@
+## 0.7.1
+* Fixes settings live reloading
+* Adds C language support
+
 ## 0.7.0
 * Adds third fg color
 * Changes attributes to italic with fg2 color
