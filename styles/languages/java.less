@@ -1,10 +1,15 @@
-// .java {
-//   .method {
-//     .uno-2();
-//     .punctuation-mixin();
-//   }
-//   .dereference {
-//     .uno-4();
-//
-//   }
-// }
+.source.java {
+
+  .meta.class,
+  .meta.method {
+    .storage.modifier {
+      .purple();
+    }
+  }
+
+  .storage.type.primitive,
+  .storage.type.annotation {
+    .orange();
+  }
+
+}
