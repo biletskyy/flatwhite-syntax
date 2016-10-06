@@ -2,7 +2,7 @@
   "name": "flatwhite-syntax",
   "theme": "syntax",
   "main": "./lib/flatwhite",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Colored backgrounds used for code highlighting.",
   "keywords": [
     "light",
