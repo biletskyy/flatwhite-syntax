@@ -1,17 +1,15 @@
-.java {
-    .keyword {
-        background-color: @bg-purple;
-    }
+.source.java {
 
-    .modifier {
-        background-color: @bg-orange;
+  .meta.class,
+  .meta.method {
+    .storage.modifier {
+      .purple();
     }
+  }
 
-    .operator, .ternary {
-        background-color: @syntax-bg;
-    }
+  .storage.type.primitive,
+  .storage.type.annotation {
+    .orange();
+  }
 
-    .annotation {
-      background-color: @bg-blue;
-    }
 }
