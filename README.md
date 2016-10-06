@@ -1,4 +1,4 @@
-[![apm downloads](https://img.shields.io/apm/dm/flatwhite-syntax.svg?maxAge=2592000)](https://atom.io/packages/flatwhite-syntax)
+[![apm downloads](https://img.shields.io/apm/dm/flatwhite-syntax.svg?maxAge=86400)](https://atom.io/packages/flatwhite-syntax)
 
 <p align="center"><img src="https://github.com/biletskyy/flatwhite-syntax/raw/master/assets/flatwhite-header.png" alt="Flatwhite syntax theme for Atom" width="314px" height="64px"></p>
 
@@ -15,8 +15,9 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - GitHub Markdown
 - Go
 - Haskell (with [language-haskell](https://atom.io/packages/language-haskell))
-- HTML
+- HTML / Mustache / Handlebars
 - Jade
+- Java
 - JavaScript (better with [language-babel](https://atom.io/packages/language-babel)) / CoffeeScript
 - React JSX (with [language-babel](https://atom.io/packages/language-babel))
 - Ruby / RoR / ERB / Slim (with [slim-language package](https://github.com/ianmitchell/slim-language))

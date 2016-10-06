@@ -1,3 +1,7 @@
+## 0.7.2
+* Adds basic Java support
+* Adds Mustache/Handlebars support
+
 ## 0.7.1
 * Fixes settings live reloading
 * Adds C language support
