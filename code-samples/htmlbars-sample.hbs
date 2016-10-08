@@ -1,0 +1,40 @@
+{{!-- Example from https://atom.io/packages/language-ember-htmlbars. --}}
+
+{{#if isRed}}
+  {{x-red}}
+{{else if isBlue}}
+  {{x-blue}}
+{{else if isGreen}}
+  {{x-green}}
+{{/if}}
+
+{{component colorComponentName}}
+
+{{#if (eq 1 2)}} 1 == 2 {{/if}}
+{{#unless (eq 1 2)}} 1 != 2 {{/unless}}
+
+{{#each people as |person index|}}
+  <div>{{index}}: {{person.name}}</div>
+{{/each}}
+
+{{if isEnabled 'active' 'disabled'}}
+
+<a href="#" style="width: {{someProperty}}px"></a>
+
+{{#each categories.items as |item|}}
+  {{some-component item=item}}
+{{/each}}
+
+{{input class=(concat "red " size) value=name}}
+
+<x-input class="red {{size}}" value="{{name}}" />
+
+{{#carousel-component as |carousel|}}
+  Hi there, I am {{carousel}}
+{{/carousel-component}}
+
+carousel/{{yield controller}}/carousel
+
+<x-customer customer=model birthday=model.birthday as |fullName age|>
+  Hello, {{fullName}}. You are {{age}} years old.
+</x-customer>
