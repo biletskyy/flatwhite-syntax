@@ -1,0 +1,39 @@
+.latex {
+
+  .keyword.control,
+  .support.function {
+    .purple();
+
+    .punctuation {
+      color: lighten(@text-purple, 30%);
+    }
+  }
+
+  .meta.preamble {
+    .support.class {
+      .blue();
+    }
+  }
+
+  .variable.parameter {
+    .orange();
+  }
+
+  .constant.other {
+    .teal();
+  }
+
+  .punctuation.definition,
+  .punctuation.section {
+    color: @syntax-fg3;
+  }
+
+  .string.quoted {
+    .reset();
+
+    .punctuation {
+      color: inherit;
+    }
+  }
+
+}
