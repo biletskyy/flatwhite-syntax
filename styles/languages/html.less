@@ -49,23 +49,39 @@
 }
 
 .htmlbars {
-  .meta.tag {
-    .entity.name.tag {
-      color: @text-orange-sec;
-    }
 
-    .entity.name.function {
-      color: @text-orange;
-    }
+  .meta.tag:not(.html) {
+    color: @syntax-fg;
 
-    .support.function.builtin {
-      .purple();
+    .punctuation.definition {
+      color: @syntax-fg3;
     }
+  }
 
-    .keyword.block-params {
-      .constant.symbol {
-        background-color: initial;
+  .meta.tag.inline {
+    .punctuation.definition {
+      .reset();
+
+      &.inline {
+        color: @syntax-fg3;
       }
     }
+  }
+
+  .support.function.builtin {
+    .purple();
+  }
+
+  .string.quoted {
+    .function.inline {
+      .reset();
+    }
+    .punctuation.definition.tag {
+      color: lighten(@text-green, 30%) !important;
+    }
+  }
+
+  .constant.symbol {
+    .reset();
   }
 }
