@@ -1,3 +1,7 @@
+## 0.7.3
+* Adds Ember HTMLBars support
+* Adds LaTeX support
+
 ## 0.7.2
 * Adds basic Java support
 * Adds Mustache/Handlebars support

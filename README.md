@@ -11,17 +11,18 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - C
 - Clojure
 - CSS / Less / SASS / SCSS
-- Elixir (with [language-elixir package](https://atom.io/packages/language-elixir))
+- [Elixir](https://atom.io/packages/language-elixir)
 - GitHub Markdown
 - Go
-- Haskell (with [language-haskell](https://atom.io/packages/language-haskell))
+- [Haskell](https://atom.io/packages/language-haskell)
 - HTML / Mustache / Handlebars / [HTMLBars](https://atom.io/packages/language-ember-htmlbars)
 - Jade
 - Java
-- JavaScript (better with [language-babel](https://atom.io/packages/language-babel)) / CoffeeScript
-- React JSX (with [language-babel](https://atom.io/packages/language-babel))
-- Ruby / RoR / ERB / Slim (with [slim-language package](https://github.com/ianmitchell/slim-language))
-- Rust (with [language-rust](https://atom.io/packages/language-rust))
+- [JavaScript](https://atom.io/packages/language-babel) / CoffeeScript
+- [LaTeX](https://atom.io/packages/language-latex)
+- [React JSX](https://atom.io/packages/language-babel)
+- Ruby / RoR / ERB / [Slim](https://github.com/ianmitchell/slim-language)
+- [Rust](https://atom.io/packages/language-rust)
 - PHP
 - Python
 
