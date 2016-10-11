@@ -15,7 +15,7 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - GitHub Markdown
 - Go
 - Haskell (with [language-haskell](https://atom.io/packages/language-haskell))
-- HTML / Mustache / Handlebars
+- HTML / Mustache / Handlebars / [HTMLBars](https://atom.io/packages/language-ember-htmlbars)
 - Jade
 - Java
 - JavaScript (better with [language-babel](https://atom.io/packages/language-babel)) / CoffeeScript

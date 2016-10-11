@@ -47,3 +47,41 @@
     }
   }
 }
+
+.htmlbars {
+
+  .meta.tag:not(.html) {
+    color: @syntax-fg;
+
+    .punctuation.definition {
+      color: @syntax-fg3;
+    }
+  }
+
+  .meta.tag.inline {
+    .punctuation.definition {
+      .reset();
+
+      &.inline {
+        color: @syntax-fg3;
+      }
+    }
+  }
+
+  .support.function.builtin {
+    .purple();
+  }
+
+  .string.quoted {
+    .function.inline {
+      .reset();
+    }
+    .punctuation.definition.tag {
+      color: lighten(@text-green, 30%) !important;
+    }
+  }
+
+  .constant.symbol {
+    .reset();
+  }
+}
