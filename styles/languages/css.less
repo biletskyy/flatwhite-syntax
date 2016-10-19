@@ -5,6 +5,8 @@
     .purple();
 
     .entity.attribute-name { .reset(); }
+
+    .punctuation.definition { color: @purple-text-sec; }
   }
 
   .support.constant {
@@ -17,6 +19,16 @@
 
   .keyword.important {
     .orange();
+  }
+
+  .keyword.other.unit {
+    .teal;
+    color: @teal-text-sec;
+  }
+
+  .punctuation.terminator,
+  .punctuation.separator {
+    .sec();
   }
 
 }

@@ -1,13 +1,15 @@
 // YAML
 
-// .yaml {
-//   .tag {
-//     .uno-2();
-//   }
-//   .constant {
-//     .duo-2();
-//   }
-//   .punctuation {
-//     .uno-4();
-//   }
-// }
+.yaml {
+  .string.unquoted {
+    .string.unquoted {
+      .blue();
+    }
+  }
+
+  .string {
+    .entity.name.tag {
+      .reset();
+    }
+  }
+}

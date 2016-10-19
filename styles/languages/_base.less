@@ -1,37 +1,40 @@
 
+.orange {
+  color: @orange-text;
+	background-color: @orange-bg;
+}
+
 .purple {
-  color: @text-purple;
-	background-color: @bg-purple;
+  color: @purple-text;
+	background-color: @purple-bg;
 }
 
 .purple-light {
-  color: @text-purple-sec;
+  color: @purple-text-sec;
 	background-color: @bg-purple-light;
+}
+
+.blue {
+  color: @blue-text;
+	background-color: @blue-bg;
+}
+
+.teal {
+  color: @teal-text;
+	background-color: @teal-bg;
 }
 
 .green {
   color: @text-green;
-	background-color: @bg-green;
+	background-color: @green-bg;
 }
 
-.blue {
-  color: @text-blue;
-	background-color: @bg-blue;
+.sec {
+  color: @base2;
 }
 
-.orange {
-  color: @text-orange;
-	background-color: @bg-orange;
-}
-
-.teal {
-  color: @text-teal;
-	background-color: @bg-teal;
-}
-
-.secondary {
-  color: #897D6C;
-  background-color: transparent;
+.secondary { // old, remove
+  color: @base2;
 }
 
 .reset {
@@ -53,7 +56,11 @@
   }
 
   .meta.embedded {
-    .punctuation.embedded { .reset(); }
+    .punctuation.embedded { .reset; }
+
+    .string.quoted {
+      .punctuation.definition { .reset; }
+    }
   }
 }
 
@@ -77,6 +84,10 @@
 .string.regexp {
   .green();
   .reset_all();
+
+  .punctuation.definition {
+    color: @green-text-sec;
+  }
 }
 
 .comment {
@@ -106,7 +117,7 @@
 // Mixins
 
 .attribute-mix {
-  color: @syntax-fg2;
+  .sec();
   font-style: italic;
 }
 
@@ -115,7 +126,7 @@
   .reset_all();
 
   .punctuation.embedded {
-    color: @text-orange-sec;
+    color: @orange-text-sec;
   }
 }
 
