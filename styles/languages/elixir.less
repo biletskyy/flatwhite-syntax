@@ -1,20 +1,18 @@
 .source.elixir {
 
-  .keyword.other.special-method {
-    .orange();
-  }
+  .keyword.other.special-method { .orange; }
 
-  .constant.language {
-    .teal();
+  .constant.language { .teal; }
+
+  .constant.symbol {
+    .punctuation.definition { .blue-sec; }
   }
 
 
   &.embedded {
 
     .keyword.other.special-method,
-    .constant.language {
-      .reset();
-    }
+    .constant.language { .reset; }
   }
 
 }

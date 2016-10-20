@@ -2,15 +2,17 @@
   .markup {
     &.heading {
       display: inline-block;
-      .purple();
+      .purple;
 
-      .heading { .reset(); }
+      .heading { .reset; }
+
+      .marker { .purple-sec; }
     }
 
     &.code,
     &.raw {
       display: inline-block;
-      .orange();
+      .orange;
 
       .support.function.actionpack,
       .support.function.viewhelpers,
@@ -28,7 +30,7 @@
       .storage.var,
       .keyword.control,
       .constant.symbol {
-        .reset();
+        .reset;
       }
     }
 
@@ -43,16 +45,20 @@
     display: inline-block;
     .blue();
 
-    .link { .reset(); }
+    .link { .reset; }
+
+    .punctuation.definition { .blue-sec; }
   }
 
   .comment {
     display: inline-block;
     font-style: normal;
-    .green();
+    .green;
 
 
     .link,
-    .comment { .reset(); }
+    .comment { .reset; }
+
+    .support.quote { .green-sec; }
   }
 }

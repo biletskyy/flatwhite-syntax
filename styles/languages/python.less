@@ -1,23 +1,18 @@
 .source.python {
 
   .storage.type.class,
-  .storage.type.function {
-    .purple();
-  }
+  .storage.type.function { .purple; }
 
   .meta.structure.dictionary.key {
     .numeric,
     .string.quoted {
-      .blue();
+      .blue;
+      .punctuation.definition { .blue-sec; }
     }
   }
 
-  .constant.language {
-    .teal();
-  }
+  .constant.language { .teal; }
 
-  .variable.self {
-    .orange();
-  }
+  .variable.self { .orange; }
 
 }

@@ -1,28 +1,30 @@
 .php {
 
   .storage.type.class,
-  .storage.type.function {
-    .purple();
+  .storage.type.function { .purple; }
+
+  .constant.language { .teal; }
+
+  .variable {
+    &.global {
+      .blue;
+      .punctuation.definition { .blue-sec; }
+    }
+
+    .punctuation.definition { .sec; }
   }
 
-  .constant.language {
-    .teal();
-  }
+  .support.function.construct { .orange; }
 
-  .variable.global {
-    .blue();
-  }
-
-  .support.function.construct {
-    .orange();
+  .punctuation {
+    // &.section.array,
+    &.terminator { .sec; }
   }
 
   .meta.embedded {
-    .reset();
+    .reset;
 
-    .punctuation.embedded {
-      .orange();
-    }
-
+    .punctuation.embedded { .orange; }
   }
+
 }

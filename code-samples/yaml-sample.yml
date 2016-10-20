@@ -1,0 +1,28 @@
+version: '2'
+services:
+  web:
+    image: wordpress:latest
+    links:
+      - db
+    environment:
+      - WORDPRESS_DB_PASSWORD=wp
+      - WORDPRESS_DB_HOST: db:3306
+    working_dir: /var/www/html
+    volumes_from:
+      - data
+    ports:
+      - "80:80"
+  db:
+    image: mysql:5.7
+    volumes_from:
+      - data
+    environment:
+      - MYSQL_ROOT_PASSWORD: wp
+      - MYSQL_DATABASE: wp
+      - MYSQL_USER: wp
+      - MYSQL_PASSWORD: wp
+  data:
+    image: busybox
+    volumes:
+      - /var/www/html/wp-content
+      - /var/lib/mysql

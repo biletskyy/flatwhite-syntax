@@ -2,33 +2,25 @@
 
   .entity.tag,
   .entity.attribute-name {
-    .purple();
+    .purple;
 
-    .entity.attribute-name { .reset(); }
+    .entity.attribute-name { .reset; }
 
-    .punctuation.definition { color: @purple-text-sec; }
+    .punctuation.definition { .purple-sec; }
   }
 
-  .support.constant {
-    .green();
-  }
+  .support.constant { .green; }
 
-  .constant.rgb-value {
-    .teal();
-  }
+  .constant.rgb-value { .teal; }
 
-  .keyword.important {
-    .orange();
-  }
+  .keyword.important { .orange; }
 
   .keyword.other.unit {
     .teal;
-    color: @teal-text-sec;
+    .teal-sec;
   }
 
   .punctuation.terminator,
-  .punctuation.separator {
-    .sec();
-  }
+  .punctuation.separator { .sec; }
 
 }

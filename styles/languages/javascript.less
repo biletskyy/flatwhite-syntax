@@ -1,38 +1,30 @@
 .source.js {
 
   .storage.type.function {
-    .purple();
+    .purple;
 
-    .function { .reset(); }
+    .function { .reset; }
   }
 
-  .constant.language {
-    .teal();
-  }
+  .constant.language { .teal; }
 
-  .string.unquoted {
-    .blue();
-  }
+  .string.unquoted { .blue; }
 
   .comment {
-    .storage.type.class { .reset(); }
+    .storage.type.class { .reset; }
   }
 
   .meta.tag.jsx {
 
-    .entity.tag {
-      .purple();
-    }
+    .entity.tag { .purple; }
 
     .entity.other.attribute-name.jsx {
-      color: @syntax-fg2;
+      .sec;
       font-style: italic;
     }
 
     .punctuation.definition.tag,
-    .keyword.operator.assignment {
-      color: @syntax-fg3;
-    }
+    .keyword.operator.assignment { .sec; }
 
   }
 }

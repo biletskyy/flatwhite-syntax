@@ -1,15 +1,11 @@
 .html {
 
   .meta.tag {
-    .sec();
+    .sec;
 
-    .entity.attribute-name {
-      .attribute-mix();
-    }
+    .entity.attribute-name { .attribute-mix; }
 
-    .entity.tag {
-      .purple();
-    }
+    .entity.tag { .purple; }
 
   }
 
@@ -17,28 +13,26 @@
 
     .meta.tag {
       .entity.tag {
-        .reset();
-        color: @base1;
+        .reset;
+        .base;
       }
     }
 
-    .string.content {
-      .blue();
-    }
+    .string.content { .blue; }
   }
 
 }
 
 .mustache {
   .meta.tag.template {
-    .orange();
-    .reset_all();
+    .orange;
+    .reset_all;
 
     .entity.name.tag {
-      color: @text-orange-sec;
+      .orange-sec;
 
       .entity.name.function {
-        color: @text-orange;
+        color: @orange-text;
       }
     }
   }
@@ -47,10 +41,10 @@
 .htmlbars {
 
   .meta.tag:not(.html) {
-    color: @syntax-fg;
+    .base;
 
     .punctuation.definition {
-      color: @syntax-fg3;
+      .sec;
     }
   }
 
@@ -59,21 +53,19 @@
       .reset();
 
       &.inline {
-        color: @syntax-fg3;
+        .sec;
       }
     }
   }
 
-  .support.function.builtin {
-    .purple();
-  }
+  .support.function.builtin { .purple; }
 
   .string.quoted {
     .function.inline {
-      .reset();
+      .reset;
     }
     .punctuation.definition.tag {
-      color: lighten(@text-green, 30%) !important;
+      color: @green-text-sec !important;
     }
   }
 

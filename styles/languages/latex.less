@@ -2,38 +2,26 @@
 
   .keyword.control,
   .support.function {
-    .purple();
+    .purple;
 
-    .punctuation {
-      color: lighten(@text-purple, 30%);
-    }
+    .punctuation { .purple-sec; }
   }
 
   .meta.preamble {
-    .support.class {
-      .blue();
-    }
+    .support.class { .blue; }
   }
 
-  .variable.parameter {
-    .orange();
-  }
+  .variable.parameter { .orange; }
 
-  .constant.other {
-    .teal();
-  }
+  .constant.other { .teal; }
 
   .punctuation.definition,
-  .punctuation.section {
-    color: @syntax-fg3;
-  }
+  .punctuation.section { .sec; }
 
   .string.quoted {
-    .reset();
+    .reset;
 
-    .punctuation {
-      color: inherit;
-    }
+    .punctuation { color: inherit; }
   }
 
 }

@@ -2,24 +2,27 @@
 
   .meta.structure.dictionary {
     .string.quoted {
-      .reset();
+      .reset;
+      .punctuation.definition { .sec; }
     }
 
     .array {
       .string.quoted {
-        .green();
+        .green;
+        .punctuation.definition { .green-sec; }
       }
     }
+
+    .punctuation.key-value { .sec; }
   }
 
   .meta.structure.dictionary, .meta.structure.array {
     & > .value.json > .string.quoted.json {
-      .green();
+      .green;
+
     }
   }
 
-  .constant.language {
-    .teal();
-  }
+  .constant.language { .teal; }
 
 }
