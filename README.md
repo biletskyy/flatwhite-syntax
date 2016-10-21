@@ -13,6 +13,7 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - [Crystal](https://atom.io/packages/language-crystal-esz)
 - CSS / Less / SASS / SCSS
 - [Elixir](https://atom.io/packages/language-elixir)
+- [Elm](https://atom.io/packages/language-elm)
 - GitHub Markdown
 - Go
 - [Haskell](https://atom.io/packages/language-haskell)
@@ -26,6 +27,7 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 - [Rust](https://atom.io/packages/language-rust)
 - PHP
 - Python
+- YAML
 
 If you need support for specific language, please, open an [issue](https://github.com/biletskyy/flatwhite-syntax/issues).
 
