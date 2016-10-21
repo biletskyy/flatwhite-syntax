@@ -9,6 +9,7 @@ Easy on the eyes. Maintain 6:1 contrast between text and background colors. [WCA
 ### Supported languages
 
 - C
+- Bash
 - Clojure
 - [Crystal](https://atom.io/packages/language-crystal-esz)
 - CSS / Less / SASS / SCSS

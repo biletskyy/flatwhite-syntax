@@ -8,6 +8,7 @@
 * Adds basic Elm support
 * Adds HAML support
 * Adds minimal YAML support
+* Adds Bash support
 
 ## 0.7.3
 * Adds Ember HTMLBars support
