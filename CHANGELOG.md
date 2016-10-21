@@ -5,6 +5,7 @@
 * Refactor every language style
 * Adds secondary color for some languages
 * Adds Crystal support
+* Adds basic Elm support
 
 ## 0.7.3
 * Adds Ember HTMLBars support
