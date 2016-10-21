@@ -1,4 +1,4 @@
-## unreleased
+## 0.8
 * Major color refactor
 * Adds secondary color variant for every hue
 * Minor color tweaks
