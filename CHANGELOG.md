@@ -1,4 +1,9 @@
-## 0.7.4
+## unreleased
+* Major color refactor
+* Adds secondary color variant for every hue
+* Minor color tweaks
+* Refactor every language style
+* Adds secondary color for some languages
 * Adds Crystal support
 
 ## 0.7.3
