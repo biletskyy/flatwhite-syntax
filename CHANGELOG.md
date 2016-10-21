@@ -1,3 +1,6 @@
+## 0.7.4
+* Adds Crystal support
+
 ## 0.7.3
 * Adds Ember HTMLBars support
 * Adds LaTeX support
