@@ -1,117 +1,117 @@
-.base { color: @base1; }
+.syntax--base { color: @base1; }
 
-.sec { color: @base2; }
+.syntax--sec { color: @base2; }
 
-.comment { color: @base3; }
+.syntax--comment { color: @base3; }
 
-.orange {
+.syntax--orange {
   color: @orange-text;
 	background-color: @orange-bg;
 }
 
-.orange-sec { color: @orange-text-sec; }
+.syntax--orange-sec { color: @orange-text-sec; }
 
-.green {
+.syntax--green {
   color: @green-text;
 	background-color: @green-bg;
 }
 
-.green-sec { color: @green-text-sec; }
+.syntax--green-sec { color: @green-text-sec; }
 
-.teal {
+.syntax--teal {
   color: @teal-text;
 	background-color: @teal-bg;
 }
 
-.teal-sec { color: @teal-text-sec; }
+.syntax--teal-sec { color: @teal-text-sec; }
 
-.blue {
+.syntax--blue {
   color: @blue-text;
 	background-color: @blue-bg;
 }
 
-.blue-sec { color: @blue-text-sec; }
+.syntax--blue-sec { color: @blue-text-sec; }
 
-.purple {
+.syntax--purple {
   color: @purple-text;
 	background-color: @purple-bg;
 }
 
-.purple-sec { color: @purple-text-sec; }
+.syntax--purple-sec { color: @purple-text-sec; }
 
 
-.reset {
+.syntax--reset {
   color: inherit;
   background-color: transparent;
 }
 
 .reset_all {
-  .keyword.control,
-  .string.quoted,
-  .string.regexp,
-  .constant.numeric,
-  .constant.keyword,
-  .constant.symbol,
-  .constant.language,
-  .entity.name.tag,
-  .meta.embedded {
-    .reset();
+  .syntax--keyword.syntax--control,
+  .syntax--string.syntax--quoted,
+  .syntax--string.syntax--regexp,
+  .syntax--constant.syntax--numeric,
+  .syntax--constant.syntax--keyword,
+  .syntax--constant.syntax--symbol,
+  .syntax--constant.syntax--language,
+  .syntax--entity.syntax--name.syntax--tag,
+  .syntax--meta.syntax--embedded {
+    .syntax--reset();
   }
 
-  .meta.embedded {
-    .punctuation.embedded { .reset; }
+  .syntax--meta.syntax--embedded {
+    .syntax--punctuation.syntax--embedded { .syntax--reset; }
 
-    .string.quoted {
-      .punctuation.definition { .reset; }
+    .syntax--string.syntax--quoted {
+      .syntax--punctuation.syntax--definition { .syntax--reset; }
     }
   }
 }
 
 // Global Highlighting
 
-.keyword.control {
-  .purple();
+.syntax--keyword.syntax--control {
+  .syntax--purple();
 }
 
-.constant.keyword,
-.constant.symbol {
-  .blue();
+.syntax--constant.syntax--keyword,
+.syntax--constant.syntax--symbol {
+  .syntax--blue();
 }
 
-.constant.numeric,
-.constant.language {
-  .teal();
+.syntax--constant.syntax--numeric,
+.syntax--constant.syntax--language {
+  .syntax--teal();
 }
 
-.string.quoted,
-.string.regexp {
-  .green();
+.syntax--string.syntax--quoted,
+.syntax--string.syntax--regexp {
+  .syntax--green();
   .reset_all();
 
-  .punctuation.definition {
+  .syntax--punctuation.syntax--definition {
     color: @green-text-sec;
   }
 }
 
-.comment {
+.syntax--comment {
   color: @base3;
   font-style: italic;
 }
 
-.meta.embedded:not(.php) {
+.syntax--meta.syntax--embedded:not(.syntax--php) {
   .settings-embedded-mix();
 }
 
-.bold { font-weight: bold; }
+.syntax--bold { font-weight: bold; }
 
-.italic { font-style: italic; }
+.syntax--italic { font-style: italic; }
 
-.invalid {
-  &.deprecated {
+.syntax--invalid {
+  &.syntax--deprecated {
     color: @syntax-deprecated-fg !important;
     background-color: @syntax-deprecated-bg !important;
   }
-  &.illegal {
+  &.syntax--illegal {
     color: @syntax-illegal-fg !important;
     background-color: @syntax-illegal-bg !important;
   }
@@ -119,22 +119,22 @@
 
 // Mixins
 
-.attribute-mix {
-  .sec();
+.syntax--attribute-mix {
+  .syntax--sec();
   font-style: italic;
 }
 
 .embedded-simple-mix {
-  .orange();
+  .syntax--orange();
   .reset_all();
 
-  .punctuation.embedded {
+  .syntax--punctuation.syntax--embedded {
     color: @orange-text-sec;
   }
 }
 
 .embedded-full-mix {
-  .punctuation.embedded {
-    .orange();
+  .syntax--punctuation.syntax--embedded {
+    .syntax--orange();
   }
 }

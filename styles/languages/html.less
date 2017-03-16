@@ -1,95 +1,95 @@
-.html {
+.syntax--html {
 
-  .meta.tag {
-    .sec;
+  .syntax--meta.syntax--tag {
+    .syntax--sec;
 
-    .entity.attribute-name { .attribute-mix; }
+    .syntax--entity.syntax--attribute-name { .syntax--attribute-mix; }
 
-    .entity.tag { .purple; }
+    .syntax--entity.syntax--tag { .syntax--purple; }
 
   }
 
-  &.htmlplus {
+  &.syntax--htmlplus {
 
-    .meta.tag {
-      .entity.tag {
-        .reset;
-        .base;
+    .syntax--meta.syntax--tag {
+      .syntax--entity.syntax--tag {
+        .syntax--reset;
+        .syntax--base;
       }
     }
 
-    .string.content { .blue; }
+    .syntax--string.syntax--content { .syntax--blue; }
   }
 
 }
 
-.mustache {
-  .meta.tag.template {
-    .orange;
+.syntax--mustache {
+  .syntax--meta.syntax--tag.syntax--template {
+    .syntax--orange;
     .reset_all;
 
-    .entity.name.tag {
-      .orange-sec;
+    .syntax--entity.syntax--name.syntax--tag {
+      .syntax--orange-sec;
 
-      .entity.name.function {
+      .syntax--entity.syntax--name.syntax--function {
         color: @orange-text;
       }
     }
   }
 }
 
-.htmlbars {
+.syntax--htmlbars {
 
-  .meta.tag:not(.html) {
-    .base;
+  .syntax--meta.syntax--tag:not(.syntax--html) {
+    .syntax--base;
 
-    .punctuation.definition {
-      .sec;
+    .syntax--punctuation.syntax--definition {
+      .syntax--sec;
     }
   }
 
-  .meta.tag.inline {
-    .punctuation.definition {
-      .reset();
+  .syntax--meta.syntax--tag.syntax--inline {
+    .syntax--punctuation.syntax--definition {
+      .syntax--reset();
 
-      &.inline {
-        .sec;
+      &.syntax--inline {
+        .syntax--sec;
       }
     }
   }
 
-  .support.function.builtin { .purple; }
+  .syntax--support.syntax--function.syntax--builtin { .syntax--purple; }
 
-  .string.quoted {
-    .function.inline {
-      .reset;
+  .syntax--string.syntax--quoted {
+    .syntax--function.syntax--inline {
+      .syntax--reset;
     }
-    .punctuation.definition.tag {
+    .syntax--punctuation.syntax--definition.syntax--tag {
       color: @green-text-sec !important;
     }
   }
 
-  .constant.symbol {
-    .reset();
+  .syntax--constant.syntax--symbol {
+    .syntax--reset();
   }
 }
 
-.haml {
+.syntax--haml {
 
-  .meta.tag {
-    .purple;
-    .punctuation.definition { .purple-sec; }
+  .syntax--meta.syntax--tag {
+    .syntax--purple;
+    .syntax--punctuation.syntax--definition { .syntax--purple-sec; }
   }
 
-  .meta.section.attributes {
-    .sec;
+  .syntax--meta.syntax--section.syntax--attributes {
+    .syntax--sec;
 
-    .constant.symbol {
-      .reset;
-      .attribute-mix;
+    .syntax--constant.syntax--symbol {
+      .syntax--reset;
+      .syntax--attribute-mix;
     }
   }
 
-  .entity.tag.class { .blue; }
+  .syntax--entity.syntax--tag.syntax--class { .syntax--blue; }
 
 }
