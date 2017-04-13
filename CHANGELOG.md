@@ -1,3 +1,6 @@
+## 0.8.1
+* Fix Atom v1.13.0 deprecation warnings 
+
 ## 0.8
 * Major color refactor
 * Adds secondary color variant for every hue
