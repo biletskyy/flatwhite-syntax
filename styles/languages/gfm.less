@@ -1,64 +1,64 @@
-.source.gfm {
-  .markup {
-    &.heading {
+.syntax--source.syntax--gfm {
+  .syntax--markup {
+    &.syntax--heading {
       display: inline-block;
-      .purple;
+      .syntax--purple;
 
-      .heading { .reset; }
+      .syntax--heading { .syntax--reset; }
 
-      .marker { .purple-sec; }
+      .syntax--marker { .syntax--purple-sec; }
     }
 
-    &.code,
-    &.raw {
+    &.syntax--code,
+    &.syntax--raw {
       display: inline-block;
-      .orange;
+      .syntax--orange;
 
-      .support.function.actionpack,
-      .support.function.viewhelpers,
-      .support.function.activerecord,
-      .support.function.activesupport,
-      .keyword.special-method,
-      .variable.this,
-      .keyword.new,
-      .constant.numeric,
-      .constant.boolean,
-      .constant.nil,
-      .constant.keyword,
-      .string.quoted,
-      .storage.control,
-      .storage.var,
-      .keyword.control,
-      .constant.symbol {
-        .reset;
+      .syntax--support.syntax--function.syntax--actionpack,
+      .syntax--support.syntax--function.syntax--viewhelpers,
+      .syntax--support.syntax--function.syntax--activerecord,
+      .syntax--support.syntax--function.syntax--activesupport,
+      .syntax--keyword.syntax--special-method,
+      .syntax--variable.syntax--this,
+      .syntax--keyword.syntax--new,
+      .syntax--constant.syntax--numeric,
+      .syntax--constant.syntax--boolean,
+      .syntax--constant.syntax--nil,
+      .syntax--constant.syntax--keyword,
+      .syntax--string.syntax--quoted,
+      .syntax--storage.syntax--control,
+      .syntax--storage.syntax--var,
+      .syntax--keyword.syntax--control,
+      .syntax--constant.syntax--symbol {
+        .syntax--reset;
       }
     }
 
-    &.italic { font-style: italic; }
+    &.syntax--italic { font-style: italic; }
 
-    &.bold { font-weight: bold; }
+    &.syntax--bold { font-weight: bold; }
 
-    &.strike { text-decoration: line-through; }
+    &.syntax--strike { text-decoration: line-through; }
   }
 
-  .link {
+  .syntax--link {
     display: inline-block;
-    .blue();
+    .syntax--blue();
 
-    .link { .reset; }
+    .syntax--link { .syntax--reset; }
 
-    .punctuation.definition { .blue-sec; }
+    .syntax--punctuation.syntax--definition { .syntax--blue-sec; }
   }
 
-  .comment {
+  .syntax--comment {
     display: inline-block;
     font-style: normal;
-    .green;
+    .syntax--green;
 
 
-    .link,
-    .comment { .reset; }
+    .syntax--link,
+    .syntax--comment { .syntax--reset; }
 
-    .support.quote { .green-sec; }
+    .syntax--support.syntax--quote { .syntax--green-sec; }
   }
 }

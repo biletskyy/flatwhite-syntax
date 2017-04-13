@@ -1,28 +1,28 @@
-.source.json {
+.syntax--source.syntax--json {
 
-  .meta.structure.dictionary {
-    .string.quoted {
-      .reset;
-      .punctuation.definition { .sec; }
+  .syntax--meta.syntax--structure.syntax--dictionary {
+    .syntax--string.syntax--quoted {
+      .syntax--reset;
+      .syntax--punctuation.syntax--definition { .syntax--sec; }
     }
 
-    .array {
-      .string.quoted {
-        .green;
-        .punctuation.definition { .green-sec; }
+    .syntax--array {
+      .syntax--string.syntax--quoted {
+        .syntax--green;
+        .syntax--punctuation.syntax--definition { .syntax--green-sec; }
       }
     }
 
-    .punctuation.key-value { .sec; }
+    .syntax--punctuation.syntax--key-value { .syntax--sec; }
   }
 
-  .meta.structure.dictionary, .meta.structure.array {
-    & > .value.json > .string.quoted.json {
-      .green;
+  .syntax--meta.syntax--structure.syntax--dictionary, .syntax--meta.syntax--structure.syntax--array {
+    & > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+      .syntax--green;
 
     }
   }
 
-  .constant.language { .teal; }
+  .syntax--constant.syntax--language { .syntax--teal; }
 
 }

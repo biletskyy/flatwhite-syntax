@@ -1,30 +1,30 @@
-.php {
+.syntax--php {
 
-  .storage.type.class,
-  .storage.type.function { .purple; }
+  .syntax--storage.syntax--type.syntax--class,
+  .syntax--storage.syntax--type.syntax--function { .syntax--purple; }
 
-  .constant.language { .teal; }
+  .syntax--constant.syntax--language { .syntax--teal; }
 
-  .variable {
-    &.global {
-      .blue;
-      .punctuation.definition { .blue-sec; }
+  .syntax--variable {
+    &.syntax--global {
+      .syntax--blue;
+      .syntax--punctuation.syntax--definition { .syntax--blue-sec; }
     }
 
-    .punctuation.definition { .sec; }
+    .syntax--punctuation.syntax--definition { .syntax--sec; }
   }
 
-  .support.function.construct { .orange; }
+  .syntax--support.syntax--function.syntax--construct { .syntax--orange; }
 
-  .punctuation {
-    // &.section.array,
-    &.terminator { .sec; }
+  .syntax--punctuation {
+    // &.syntax--section.syntax--array,
+    &.syntax--terminator { .syntax--sec; }
   }
 
-  .meta.embedded {
-    .reset;
+  .syntax--meta.syntax--embedded {
+    .syntax--reset;
 
-    .punctuation.embedded { .orange; }
+    .syntax--punctuation.syntax--embedded { .syntax--orange; }
   }
 
 }
