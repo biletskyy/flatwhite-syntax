@@ -1,16 +1,17 @@
 .syntax--html {
-
   .syntax--meta.syntax--tag {
     .syntax--sec;
 
-    .syntax--entity.syntax--attribute-name { .syntax--attribute-mix; }
+    .syntax--entity.syntax--attribute-name {
+      .syntax--attribute-mix;
+    }
 
-    .syntax--entity.syntax--tag { .syntax--purple; }
-
+    .syntax--entity.syntax--tag {
+      .syntax--purple;
+    }
   }
 
   &.syntax--htmlplus {
-
     .syntax--meta.syntax--tag {
       .syntax--entity.syntax--tag {
         .syntax--reset;
@@ -18,9 +19,10 @@
       }
     }
 
-    .syntax--string.syntax--content { .syntax--blue; }
+    .syntax--string.syntax--content {
+      .syntax--blue;
+    }
   }
-
 }
 
 .syntax--mustache {
@@ -39,7 +41,6 @@
 }
 
 .syntax--htmlbars {
-
   .syntax--meta.syntax--tag:not(.syntax--html) {
     .syntax--base;
 
@@ -58,7 +59,9 @@
     }
   }
 
-  .syntax--support.syntax--function.syntax--builtin { .syntax--purple; }
+  .syntax--support.syntax--function.syntax--builtin {
+    .syntax--purple;
+  }
 
   .syntax--string.syntax--quoted {
     .syntax--function.syntax--inline {
@@ -75,10 +78,11 @@
 }
 
 .syntax--haml {
-
   .syntax--meta.syntax--tag {
     .syntax--purple;
-    .syntax--punctuation.syntax--definition { .syntax--purple-sec; }
+    .syntax--punctuation.syntax--definition {
+      .syntax--purple-sec;
+    }
   }
 
   .syntax--meta.syntax--section.syntax--attributes {
@@ -90,6 +94,7 @@
     }
   }
 
-  .syntax--entity.syntax--tag.syntax--class { .syntax--blue; }
-
+  .syntax--entity.syntax--tag.syntax--class {
+    .syntax--blue;
+  }
 }

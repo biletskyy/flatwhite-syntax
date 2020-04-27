@@ -1,44 +1,59 @@
-.syntax--base { color: @base1; }
+.syntax--base {
+  color: @base1;
+}
 
-.syntax--sec { color: @base2; }
+.syntax--sec {
+  color: @base2;
+}
 
-.syntax--comment { color: @base3; }
+.syntax--comment {
+  color: @base3;
+}
 
 .syntax--orange {
   color: @orange-text;
-	background-color: @orange-bg;
+  background-color: @orange-bg;
 }
 
-.syntax--orange-sec { color: @orange-text-sec; }
+.syntax--orange-sec {
+  color: @orange-text-sec;
+}
 
 .syntax--green {
   color: @green-text;
-	background-color: @green-bg;
+  background-color: @green-bg;
 }
 
-.syntax--green-sec { color: @green-text-sec; }
+.syntax--green-sec {
+  color: @green-text-sec;
+}
 
 .syntax--teal {
   color: @teal-text;
-	background-color: @teal-bg;
+  background-color: @teal-bg;
 }
 
-.syntax--teal-sec { color: @teal-text-sec; }
+.syntax--teal-sec {
+  color: @teal-text-sec;
+}
 
 .syntax--blue {
   color: @blue-text;
-	background-color: @blue-bg;
+  background-color: @blue-bg;
 }
 
-.syntax--blue-sec { color: @blue-text-sec; }
+.syntax--blue-sec {
+  color: @blue-text-sec;
+}
 
 .syntax--purple {
   color: @purple-text;
-	background-color: @purple-bg;
+  background-color: @purple-bg;
 }
 
-.syntax--purple-sec { color: @purple-text-sec; }
-
+.syntax--purple-sec {
+  color: @purple-text-sec;
+}
 
 .syntax--reset {
   color: inherit;
@@ -59,10 +74,14 @@
   }
 
   .syntax--meta.syntax--embedded {
-    .syntax--punctuation.syntax--embedded { .syntax--reset; }
+    .syntax--punctuation.syntax--embedded {
+      .syntax--reset;
+    }
 
     .syntax--string.syntax--quoted {
-      .syntax--punctuation.syntax--definition { .syntax--reset; }
+      .syntax--punctuation.syntax--definition {
+        .syntax--reset;
+      }
     }
   }
 }
@@ -102,9 +121,13 @@
   .settings-embedded-mix();
 }
 
-.syntax--bold { font-weight: bold; }
+.syntax--bold {
+  font-weight: bold;
+}
 
-.syntax--italic { font-style: italic; }
+.syntax--italic {
+  font-style: italic;
+}
 
 .syntax--invalid {
   &.syntax--deprecated {
